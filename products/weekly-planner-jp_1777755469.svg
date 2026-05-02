@@ -1,0 +1,312 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+      
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .bg { fill: #F5F0EB; }
+      .surface { fill: #EDE6DC; }
+      .fg { fill: #3D3A36; }
+      .muted { fill: #A89F94; }
+      .border-color { fill: #D5CDC2; }
+      .accent { fill: #8B7355; }
+      
+      .border-stroke { stroke: #D5CDC2; stroke-width: 1.5; fill: none; }
+      .border-stroke-thin { stroke: #D5CDC2; stroke-width: 0.5; fill: none; }
+      .border-stroke-accent { stroke: #8B7355; stroke-width: 1; fill: none; }
+      
+      .title-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 900; fill: #3D3A36; font-size: 28px; letter-spacing: 6px; }
+      .subtitle-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 300; fill: #A89F94; font-size: 11px; letter-spacing: 3px; }
+      .section-title { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 700; fill: #3D3A36; font-size: 12px; letter-spacing: 4px; }
+      .time-label { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 400; fill: #A89F94; font-size: 8px; letter-spacing: 1px; }
+      .day-label { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 500; fill: #3D3A36; font-size: 10px; letter-spacing: 2px; }
+      .checkbox-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 400; fill: #3D3A36; font-size: 10px; letter-spacing: 1px; }
+      .notes-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 400; fill: #3D3A36; font-size: 10px; letter-spacing: 1px; }
+      .bucket-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 400; fill: #3D3A36; font-size: 10px; letter-spacing: 1px; }
+      .accent-text { fill: #8B7355; }
+      .small-note { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-weight: 300; fill: #D5CDC2; font-size: 7px; letter-spacing: 2px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+  
+  <!-- Outer border - ink wash style -->
+  <rect x="12" y="12" width="776" height="976" class="border-stroke" rx="0" ry="0"/>
+  <rect x="15" y="15" width="770" height="970" class="border-stroke-thin" rx="0" ry="0"/>
+  
+  <!-- Ink wash accent marks -->
+  <line x1="12" y1="12" x2="45" y2="12" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="12" y1="12" x2="12" y2="40" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="788" y1="12" x2="755" y2="12" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="788" y1="12" x2="788" y2="40" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="12" y1="988" x2="45" y2="988" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="12" y1="988" x2="12" y2="960" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="788" y1="988" x2="755" y2="988" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+  <line x1="788" y1="988" x2="788" y2="960" stroke="#8B7355" stroke-width="2.5" opacity="0.6"/>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <text x="40" y="58" class="title-text">WEEKLY PLANNER</text>
+  <text x="40" y="78" class="subtitle-text">— 二〇二四年 第四十二周 · 十月十四日至二十日 —</text>
+  
+  <!-- Decorative line under header -->
+  <line x1="40" y1="92" x2="280" y2="92" stroke="#8B7355" stroke-width="1.5" opacity="0.5"/>
+  <line x1="284" y1="92" x2="300" y2="92" stroke="#D5CDC2" stroke-width="0.5"/>
+
+  <!-- ===== TIME AXIS SECTION ===== -->
+  <!-- Section background -->
+  <rect x="40" y="110" width="720" height="370" class="surface" rx="0" ry="0" opacity="0.4"/>
+  
+  <!-- Time labels - 6AM to 10PM (32 half-hour slots) -->
+  <!-- Column header: Time -->
+  <text x="48" y="132" class="section-title">时间</text>
+  <text x="48" y="145" class="small-note">TIME</text>
+  
+  <!-- Day headers -->
+  <text x="140" y="132" class="day-label">周一</text>
+  <text x="220" y="132" class="day-label">周二</text>
+  <text x="300" y="132" class="day-label">周三</text>
+  <text x="380" y="132" class="day-label">周四</text>
+  <text x="460" y="132" class="day-label">周五</text>
+  <text x="540" y="132" class="day-label">周六</text>
+  <text x="620" y="132" class="day-label">周日</text>
+  
+  <!-- Divider under headers -->
+  <line x1="40" y1="150" x2="760" y2="150" stroke="#D5CDC2" stroke-width="0.8"/>
+  
+  <!-- Time rows with labels -->
+  <!-- 6:00 -->
+  <text x="48" y="168" class="time-label">6:00</text>
+  <line x1="90" y1="165" x2="760" y2="165" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 6:30 -->
+  <text x="48" y="183" class="time-label">6:30</text>
+  <line x1="90" y1="180" x2="760" y2="180" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 7:00 -->
+  <text x="48" y="198" class="time-label">7:00</text>
+  <line x1="90" y1="195" x2="760" y2="195" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 7:30 -->
+  <text x="48" y="213" class="time-label">7:30</text>
+  <line x1="90" y1="210" x2="760" y2="210" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 8:00 -->
+  <text x="48" y="228" class="time-label">8:00</text>
+  <line x1="90" y1="225" x2="760" y2="225" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 8:30 -->
+  <text x="48" y="243" class="time-label">8:30</text>
+  <line x1="90" y1="240" x2="760" y2="240" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 9:00 -->
+  <text x="48" y="258" class="time-label">9:00</text>
+  <line x1="90" y1="255" x2="760" y2="255" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 9:30 -->
+  <text x="48" y="273" class="time-label">9:30</text>
+  <line x1="90" y1="270" x2="760" y2="270" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 10:00 -->
+  <text x="48" y="288" class="time-label">10:00</text>
+  <line x1="90" y1="285" x2="760" y2="285" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 10:30 -->
+  <text x="48" y="303" class="time-label">10:30</text>
+  <line x1="90" y1="300" x2="760" y2="300" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 11:00 -->
+  <text x="48" y="318" class="time-label">11:00</text>
+  <line x1="90" y1="315" x2="760" y2="315" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 11:30 -->
+  <text x="48" y="333" class="time-label">11:30</text>
+  <line x1="90" y1="330" x2="760" y2="330" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 12:00 -->
+  <text x="48" y="348" class="time-label">12:00</text>
+  <line x1="90" y1="345" x2="760" y2="345" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 12:30 -->
+  <text x="48" y="363" class="time-label">12:30</text>
+  <line x1="90" y1="360" x2="760" y2="360" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 13:00 -->
+  <text x="48" y="378" class="time-label">13:00</text>
+  <line x1="90" y1="375" x2="760" y2="375" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 13:30 -->
+  <text x="48" y="393" class="time-label">13:30</text>
+  <line x1="90" y1="390" x2="760" y2="390" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 14:00 -->
+  <text x="48" y="408" class="time-label">14:00</text>
+  <line x1="90" y1="405" x2="760" y2="405" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 14:30 -->
+  <text x="48" y="423" class="time-label">14:30</text>
+  <line x1="90" y1="420" x2="760" y2="420" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 15:00 -->
+  <text x="48" y="438" class="time-label">15:00</text>
+  <line x1="90" y1="435" x2="760" y2="435" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 15:30 -->
+  <text x="48" y="453" class="time-label">15:30</text>
+  <line x1="90" y1="450" x2="760" y2="450" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 16:00 -->
+  <text x="48" y="468" class="time-label">16:00</text>
+  <line x1="90" y1="465" x2="760" y2="465" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 16:30 -->
+  <text x="48" y="483" class="time-label">16:30</text>
+  <line x1="90" y1="480" x2="760" y2="480" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 17:00 -->
+  <text x="48" y="498" class="time-label">17:00</text>
+  <line x1="90" y1="495" x2="760" y2="495" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 17:30 -->
+  <text x="48" y="513" class="time-label">17:30</text>
+  <line x1="90" y1="510" x2="760" y2="510" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 18:00 -->
+  <text x="48" y="528" class="time-label">18:00</text>
+  <line x1="90" y1="525" x2="760" y2="525" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 18:30 -->
+  <text x="48" y="543" class="time-label">18:30</text>
+  <line x1="90" y1="540" x2="760" y2="540" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 19:00 -->
+  <text x="48" y="558" class="time-label">19:00</text>
+  <line x1="90" y1="555" x2="760" y2="555" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 19:30 -->
+  <text x="48" y="573" class="time-label">19:30</text>
+  <line x1="90" y1="570" x2="760" y2="570" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 20:00 -->
+  <text x="48" y="588" class="time-label">20:00</text>
+  <line x1="90" y1="585" x2="760" y2="585" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 20:30 -->
+  <text x="48" y="603" class="time-label">20:30</text>
+  <line x1="90" y1="600" x2="760" y2="600" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 21:00 -->
+  <text x="48" y="618" class="time-label">21:00</text>
+  <line x1="90" y1="615" x2="760" y2="615" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- 21:30 -->
+  <text x="48" y="633" class="time-label">21:30</text>
+  <line x1="90" y1="630" x2="760" y2="630" stroke="#EDE6DC" stroke-width="0.3"/>
+  
+  <!-- 22:00 -->
+  <text x="48" y="648" class="time-label">22:00</text>
+  <line x1="90" y1="645" x2="760" y2="645" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Vertical day dividers -->
+  <line x1="130" y1="150" x2="130" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="210" y1="150" x2="210" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="290" y1="150" x2="290" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="370" y1="150" x2="370" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="450" y1="150" x2="450" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="530" y1="150" x2="530" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="610" y1="150" x2="610" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+  <line x1="690" y1="150" x2="690" y2="650" stroke="#D5CDC2" stroke-width="0.5"/>
+
+  <!-- Current time indicator (10:30) -->
+  <line x1="90" y1="300" x2="760" y2="300" stroke="#8B7355" stroke-width="1.2" opacity="0.4"/>
+  <circle cx="85" cy="300" r="2.5" fill="#8B7355" opacity="0.6"/>
+
+  <!-- ===== DIVIDER BETWEEN SECTIONS ===== -->
+  <line x1="40" y1="670" x2="760" y2="670" stroke="#8B7355" stroke-width="0.8" opacity="0.3"/>
+  
+  <!-- Ink splash accent dot -->
+  <circle cx="760" cy="670" r="3" fill="#8B7355" opacity="0.15"/>
+
+  <!-- ===== BOTTOM THREE-COLUMN SECTION ===== -->
+  
+  <!-- PRIORITY COLUMN -->
+  <rect x="40" y="690" width="240" height="270" class="surface" rx="0" ry="0" opacity="0.3"/>
+  
+  <text x="48" y="718" class="section-title">优先事项</text>
+  <text x="48" y="733" class="small-note">PRIORITY</text>
+  
+  <line x1="48" y1="742" x2="272" y2="742" stroke="#D5CDC2" stroke-width="0.5"/>
+  
+  <!-- Priority item 1 -->
+  <rect x="48" y="755" width="12" height="12" fill="none" stroke="#8B7355" stroke-width="1.2"/>
+  <text x="68" y="765" class="checkbox-text">完成项目提案初稿</text>
+  
+  <!-- Priority item 2 -->
+  <rect x="48" y="785" width="12" height="12" fill="none" stroke="#8B7355" stroke-width="1.2"/>
+  <text x="68" y="795" class="checkbox-text">预约牙科检查</text>
+  
+  <!-- Priority item 3 -->
+  <rect x="48" y="815" width="12" height="12" fill="none" stroke="#8B7355" stroke-width="1.2"/>
+  <text x="68" y="825" class="checkbox-text">整理书房书架</text>
+  
+  <!-- Priority item 4 -->
+  <rect x="48" y="845" width="12" height="12" fill="none" stroke="#8B7355" stroke-width="1.2"/>
+  <text x="68" y="855" class="checkbox-text">购买下周食材</text>
+  
+  <!-- Priority item 5 -->
+  <rect x="48" y="875" width="12" height="12" fill="none" stroke="#8B7355" stroke-width="1.2"/>
+  <text x="68" y="885" class="checkbox-text">给母亲打电话</text>
+
+  <!-- Vertical divider 1 -->
+  <line x1="295" y1="690" x2="295" y2="960" stroke="#D5CDC2" stroke-width="0.5"/>
+
+  <!-- BUCKET LIST COLUMN -->
+  <rect x="310" y="690" width="200" height="270" class="surface" rx="0" ry="0" opacity="0.2"/>
+  
+  <text x="318" y="718" class="section-title">心愿清单</text>
+  <text x="318" y="733" class="small-note">BUCKET LIST</text>
+  
+  <line x1="318" y1="742" x2="502" y2="742" stroke="#D5CDC2" stroke-width="0.5"/>
+  
+  <!-- Bucket item 1 -->
+  <text x="318" y="765" class="bucket-text">去京都看红叶</text>
+  <line x1="318" y1="772" x2="490" y2="772" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- Bucket item 2 -->
+  <text x="318" y="795" class="bucket-text">学会做抹茶蛋糕</text>
+  <line x1="318" y1="802" x2="490" y2="802" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- Bucket item 3 -->
+  <text x="318" y="825" class="bucket-text">完成半程马拉松</text>
+  <line x1="318" y1="832" x2="490" y2="832" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+
+  <!-- Vertical divider 2 -->
+  <line x1="525" y1="690" x2="525" y2="960" stroke="#D5CDC2" stroke-width="0.5"/>
+
+  <!-- NOTES COLUMN -->
+  <rect x="540" y="690" width="220" height="270" class="surface" rx="0" ry="0" opacity="0.25"/>
+  
+  <text x="548" y="718" class="section-title">随笔笔记</text>
+  <text x="548" y="733" class="small-note">NOTES</text>
+  
+  <line x1="548" y1="742" x2="752" y2="742" stroke="#D5CDC2" stroke-width="0.5"/>
+  
+  <!-- Notes lines -->
+  <line x1="548" y1="765" x2="740" y2="765" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="785" x2="740" y2="785" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="805" x2="740" y2="805" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="825" x2="740" y2="825" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="845" x2="740" y2="845" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="865" x2="740" y2="865" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="885" x2="740" y2="885" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="905" x2="740" y2="905" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  <line x1="548" y1="925" x2="740" y2="925" stroke="#D5CDC2" stroke-width="0.3" opacity="0.5"/>
+  
+  <!-- Small accent dot in notes area -->
+  <circle cx="740" cy="750" r="1.5" fill="#8B7355" opacity="0.3"/>
+
+  <!-- ===== FOOTER ===== -->
+  <text x="40" y="980" class="small-note">© 闲鱼 · 日式手账 · 侘寂之美</text>
+  <text x="700" y="980" class="small-note" text-anchor="end">WEEK 42 · 2024</text>
+</svg>

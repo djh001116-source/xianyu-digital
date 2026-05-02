@@ -1,0 +1,194 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { box-sizing: border-box; }
+      .bg { fill: #F4F1EA; }
+      .surface { fill: #EAE5DA; }
+      .border { fill: none; stroke: #D5CDC2; stroke-width: 0.5; }
+      .border-thick { fill: none; stroke: #D5CDC2; stroke-width: 1; }
+      .text-main { fill: #3A3A35; font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; }
+      .text-muted { fill: #A8A095; font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; }
+      .text-accent { fill: #6B8E6B; font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; }
+      .title { font-size: 22px; font-weight: 600; letter-spacing: 3px; }
+      .subtitle { font-size: 9px; letter-spacing: 1.5px; }
+      .day-header { font-size: 11px; font-weight: 500; letter-spacing: 1px; }
+      .meal-label { font-size: 8px; letter-spacing: 1px; }
+      .food-hint { font-size: 6.5px; fill: #A8A095; }
+      .grocery-title { font-size: 12px; font-weight: 500; letter-spacing: 1.5px; }
+      .grocery-item { font-size: 8px; fill: #3A3A35; }
+      .checkbox { fill: none; stroke: #A8A095; stroke-width: 0.8; }
+      .accent-line { fill: #6B8E6B; }
+      .outer-border { fill: none; stroke: #D5CDC2; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+  
+  <!-- Outer border -->
+  <rect class="outer-border" x="18" y="18" width="764" height="964" rx="0" ry="0"/>
+
+  <!-- Top accent line -->
+  <rect class="accent-line" x="18" y="18" width="764" height="3"/>
+
+  <!-- Title section -->
+  <text class="text-main title" x="40" y="72">WEEKLY MEAL PLANNER</text>
+  <text class="text-muted subtitle" x="40" y="90">一周饮食计划表</text>
+  
+  <!-- Subtle divider -->
+  <line class="border-thick" x1="40" y1="102" x2="760" y2="102"/>
+
+  <!-- ===== TABLE GRID ===== -->
+  <!-- Column positions: Mon=40, Tue=143, Wed=246, Thu=349, Fri=452, Sat=555, Sun=658, width=93 -->
+  <!-- Row positions: header=115, breakfast=150, lunch=210, dinner=270, snack=330, each row height=50 -->
+  
+  <!-- Column headers (days) -->
+  <text class="text-main day-header" x="40" y="130">MON</text>
+  <text class="text-main day-header" x="143" y="130">TUE</text>
+  <text class="text-main day-header" x="246" y="130">WED</text>
+  <text class="text-main day-header" x="349" y="130">THU</text>
+  <text class="text-main day-header" x="452" y="130">FRI</text>
+  <text class="text-main day-header" x="555" y="130">SAT</text>
+  <text class="text-main day-header" x="658" y="130">SUN</text>
+
+  <!-- Day header underline -->
+  <line class="border" x1="40" y1="138" x2="751" y2="138"/>
+
+  <!-- Row labels -->
+  <text class="text-muted meal-label" x="40" y="170">BREAKFAST</text>
+  <text class="text-muted meal-label" x="40" y="230">LUNCH</text>
+  <text class="text-muted meal-label" x="40" y="290">DINNER</text>
+  <text class="text-muted meal-label" x="40" y="350">SNACK</text>
+
+  <!-- Horizontal grid lines -->
+  <line class="border" x1="40" y1="180" x2="751" y2="180"/>
+  <line class="border" x1="40" y1="240" x2="751" y2="240"/>
+  <line class="border" x1="40" y1="300" x2="751" y2="300"/>
+  <line class="border" x1="40" y1="360" x2="751" y2="360"/>
+
+  <!-- Vertical grid lines -->
+  <line class="border" x1="133" y1="115" x2="133" y2="360"/>
+  <line class="border" x1="236" y1="115" x2="236" y2="360"/>
+  <line class="border" x1="339" y1="115" x2="339" y2="360"/>
+  <line class="border" x1="442" y1="115" x2="442" y2="360"/>
+  <line class="border" x1="545" y1="115" x2="545" y2="360"/>
+  <line class="border" x1="648" y1="115" x2="648" y2="360"/>
+  <line class="border" x1="751" y1="115" x2="751" y2="360"/>
+
+  <!-- ===== FOOD HINTS ===== -->
+  <!-- Row 1: Breakfast -->
+  <text class="food-hint" x="148" y="168">eggs, toast</text>
+  <text class="food-hint" x="251" y="168">oatmeal</text>
+  <text class="food-hint" x="354" y="168">yogurt, granola</text>
+  <text class="food-hint" x="457" y="168">smoothie</text>
+  <text class="food-hint" x="560" y="168">pancakes</text>
+  <text class="food-hint" x="663" y="168">fruit bowl</text>
+  <text class="food-hint" x="766" y="168">croissant</text>
+
+  <!-- Row 2: Lunch -->
+  <text class="food-hint" x="148" y="228">chicken salad</text>
+  <text class="food-hint" x="251" y="228">quinoa bowl</text>
+  <text class="food-hint" x="354" y="228">wrap</text>
+  <text class="food-hint" x="457" y="228">soup</text>
+  <text class="food-hint" x="560" y="228">sandwich</text>
+  <text class="food-hint" x="663" y="228">sushi</text>
+  <text class="food-hint" x="766" y="228">pasta</text>
+
+  <!-- Row 3: Dinner -->
+  <text class="food-hint" x="148" y="288">grilled fish</text>
+  <text class="food-hint" x="251" y="288">stir fry</text>
+  <text class="food-hint" x="354" y="288">curry</text>
+  <text class="food-hint" x="457" y="288">steak</text>
+  <text class="food-hint" x="560" y="288">risotto</text>
+  <text class="food-hint" x="663" y="288">salmon</text>
+  <text class="food-hint" x="766" y="288">roast</text>
+
+  <!-- Row 4: Snack -->
+  <text class="food-hint" x="148" y="348">nuts</text>
+  <text class="food-hint" x="251" y="348">fruit</text>
+  <text class="food-hint" x="354" y="348">hummus</text>
+  <text class="food-hint" x="457" y="348">cheese</text>
+  <text class="food-hint" x="560" y="348">dark chocolate</text>
+  <text class="food-hint" x="663" y="348">rice cakes</text>
+  <text class="food-hint" x="766" y="348">tea</text>
+
+  <!-- ===== GROCERY LIST ===== -->
+  <line class="border-thick" x1="40" y1="380" x2="760" y2="380"/>
+  
+  <text class="text-main grocery-title" x="40" y="408">GROCERY LIST</text>
+  <text class="text-muted subtitle" x="40" y="422">购物清单</text>
+  
+  <!-- Accent dot -->
+  <circle cx="760" cy="400" r="3" fill="#6B8E6B"/>
+
+  <!-- Grocery items with checkboxes -->
+  <!-- Left column (items 1-5) -->
+  <rect class="checkbox" x="40" y="445" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="58" y="454">eggs (1 dozen)</text>
+
+  <rect class="checkbox" x="40" y="475" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="58" y="484">milk (whole)</text>
+
+  <rect class="checkbox" x="40" y="505" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="58" y="514">bread (sourdough)</text>
+
+  <rect class="checkbox" x="40" y="535" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="58" y="544">chicken breast</text>
+
+  <rect class="checkbox" x="40" y="565" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="58" y="574">mixed greens</text>
+
+  <!-- Right column (items 6-10) -->
+  <rect class="checkbox" x="280" y="445" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="298" y="454">salmon fillet</text>
+
+  <rect class="checkbox" x="280" y="475" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="298" y="484">brown rice</text>
+
+  <rect class="checkbox" x="280" y="505" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="298" y="514">almonds</text>
+
+  <rect class="checkbox" x="280" y="535" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="298" y="544">greek yogurt</text>
+
+  <rect class="checkbox" x="280" y="565" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="298" y="574">bananas</text>
+
+  <!-- Third column (items 11-15) -->
+  <rect class="checkbox" x="520" y="445" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="538" y="454">tomatoes</text>
+
+  <rect class="checkbox" x="520" y="475" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="538" y="484">avocado</text>
+
+  <rect class="checkbox" x="520" y="505" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="538" y="514">lemons</text>
+
+  <rect class="checkbox" x="520" y="535" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="538" y="544">garlic</text>
+
+  <rect class="checkbox" x="520" y="565" width="10" height="10" rx="0"/>
+  <text class="grocery-item" x="538" y="574">olive oil</text>
+
+  <!-- ===== NOTES SECTION ===== -->
+  <line class="border-thick" x1="40" y1="610" x2="760" y2="610"/>
+
+  <text class="text-main grocery-title" x="40" y="638">NOTES</text>
+  <text class="text-muted subtitle" x="40" y="652">备注</text>
+
+  <!-- Note lines -->
+  <line class="border" x1="40" y1="680" x2="760" y2="680"/>
+  <line class="border" x1="40" y1="720" x2="760" y2="720"/>
+  <line class="border" x1="40" y1="760" x2="760" y2="760"/>
+  <line class="border" x1="40" y1="800" x2="760" y2="800"/>
+  <line class="border" x1="40" y1="840" x2="760" y2="840"/>
+  <line class="border" x1="40" y1="880" x2="760" y2="880"/>
+
+  <!-- ===== BOTTOM ACCENT ===== -->
+  <rect class="accent-line" x="18" y="979" width="764" height="3"/>
+
+  <!-- Bottom decorative text -->
+  <text class="text-muted" style="font-size:6px; letter-spacing:2px;" x="40" y="955">PLAN AHEAD · EAT WELL · STAY FRESH</text>
+  <text class="text-muted" style="font-size:6px;" x="720" y="955">© weekly planner</text>
+
+</svg>

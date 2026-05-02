@@ -1,0 +1,238 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="800" height="1000" viewBox="0 0 800 1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap');
+      
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .bg { fill: #F5F0EB; }
+      .surface { fill: #EDE6DC; }
+      .fg { fill: #3D3A36; }
+      .muted { fill: #A89F94; }
+      .border-color { fill: #D5CDC2; }
+      .accent { fill: #8B7355; }
+      
+      .border-stroke { stroke: #D5CDC2; stroke-width: 1; }
+      .border-stroke-thin { stroke: #D5CDC2; stroke-width: 0.5; }
+      .border-stroke-accent { stroke: #8B7355; stroke-width: 1.5; }
+      
+      .title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 900; font-size: 28px; fill: #3D3A36; letter-spacing: 4px; }
+      .subtitle { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 400; font-size: 11px; fill: #A89F94; letter-spacing: 2px; }
+      .day-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 700; font-size: 11px; fill: #3D3A36; letter-spacing: 1px; }
+      .time-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 400; font-size: 9px; fill: #A89F94; letter-spacing: 0.5px; }
+      .time-label-strong { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 700; font-size: 9px; fill: #3D3A36; letter-spacing: 0.5px; }
+      .section-title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 700; font-size: 13px; fill: #3D3A36; letter-spacing: 2px; }
+      .checkbox-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 400; font-size: 10px; fill: #3D3A36; }
+      .notes-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-weight: 400; font-size: 10px; fill: #A89F94; }
+      .accent-text { fill: #8B7355; }
+      
+      .ink-border { fill: none; stroke: #3D3A36; stroke-width: 1.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.3; }
+      .ink-border-light { fill: none; stroke: #3D3A36; stroke-width: 0.5; stroke-linecap: round; stroke-linejoin: round; opacity: 0.15; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" />
+  
+  <!-- Outer border - subtle ink wash effect -->
+  <rect x="12" y="12" width="776" height="976" fill="none" stroke="#3D3A36" stroke-width="1.5" rx="0" opacity="0.25" />
+  <rect x="14" y="14" width="772" height="972" fill="none" stroke="#3D3A36" stroke-width="0.5" rx="0" opacity="0.1" />
+  
+  <!-- Ink wash accent marks - top left corner -->
+  <line x1="12" y1="40" x2="12" y2="60" class="ink-border" />
+  <line x1="12" y1="12" x2="40" y2="12" class="ink-border" />
+  
+  <!-- Ink wash accent marks - bottom right corner -->
+  <line x1="788" y1="960" x2="788" y2="940" class="ink-border" />
+  <line x1="788" y1="988" x2="760" y2="988" class="ink-border" />
+
+  <!-- ===== HEADER SECTION ===== -->
+  <!-- Title area - asymmetrical positioning -->
+  <text x="40" y="65" class="title">WEEKLY PLANNER</text>
+  <text x="40" y="85" class="subtitle">2025 · 春 · 第三周</text>
+  
+  <!-- Accent mark under title -->
+  <line x1="40" y1="98" x2="120" y2="98" class="border-stroke-accent" />
+
+  <!-- ===== TIME GRID SECTION ===== -->
+  <!-- Grid background -->
+  <rect x="40" y="120" width="720" height="440" class="surface" rx="0" />
+  
+  <!-- Day headers row -->
+  <line x1="40" y1="148" x2="760" y2="148" class="border-stroke" />
+  
+  <!-- Day labels -->
+  <text x="60" y="140" class="day-label">MON</text>
+  <text x="162" y="140" class="day-label">TUE</text>
+  <text x="264" y="140" class="day-label">WED</text>
+  <text x="366" y="140" class="day-label">THU</text>
+  <text x="468" y="140" class="day-label">FRI</text>
+  <text x="570" y="140" class="day-label">SAT</text>
+  <text x="672" y="140" class="day-label">SUN</text>
+  
+  <!-- Vertical day column dividers -->
+  <line x1="152" y1="120" x2="152" y2="560" class="border-stroke-thin" />
+  <line x1="254" y1="120" x2="254" y2="560" class="border-stroke-thin" />
+  <line x1="356" y1="120" x2="356" y2="560" class="border-stroke-thin" />
+  <line x1="458" y1="120" x2="458" y2="560" class="border-stroke-thin" />
+  <line x1="560" y1="120" x2="560" y2="560" class="border-stroke-thin" />
+  <line x1="662" y1="120" x2="662" y2="560" class="border-stroke-thin" />
+  
+  <!-- Time labels and horizontal grid lines -->
+  <!-- 6AM -->
+  <text x="44" y="177" class="time-label">6AM</text>
+  <line x1="40" y1="180" x2="760" y2="180" class="border-stroke-thin" />
+  <line x1="40" y1="190" x2="760" y2="190" class="ink-border-light" />
+  
+  <!-- 7AM -->
+  <text x="44" y="207" class="time-label">7AM</text>
+  <line x1="40" y1="210" x2="760" y2="210" class="border-stroke-thin" />
+  <line x1="40" y1="220" x2="760" y2="220" class="ink-border-light" />
+  
+  <!-- 8AM -->
+  <text x="44" y="237" class="time-label">8AM</text>
+  <line x1="40" y1="240" x2="760" y2="240" class="border-stroke-thin" />
+  <line x1="40" y1="250" x2="760" y2="250" class="ink-border-light" />
+  
+  <!-- 9AM -->
+  <text x="44" y="267" class="time-label">9AM</text>
+  <line x1="40" y1="270" x2="760" y2="270" class="border-stroke-thin" />
+  <line x1="40" y1="280" x2="760" y2="280" class="ink-border-light" />
+  
+  <!-- 10AM -->
+  <text x="44" y="297" class="time-label">10AM</text>
+  <line x1="40" y1="300" x2="760" y2="300" class="border-stroke-thin" />
+  <line x1="40" y1="310" x2="760" y2="310" class="ink-border-light" />
+  
+  <!-- 11AM -->
+  <text x="44" y="327" class="time-label">11AM</text>
+  <line x1="40" y1="330" x2="760" y2="330" class="border-stroke-thin" />
+  <line x1="40" y1="340" x2="760" y2="340" class="ink-border-light" />
+  
+  <!-- 12PM -->
+  <text x="44" y="357" class="time-label">12PM</text>
+  <line x1="40" y1="360" x2="760" y2="360" class="border-stroke-thin" />
+  <line x1="40" y1="370" x2="760" y2="370" class="ink-border-light" />
+  
+  <!-- 1PM -->
+  <text x="44" y="387" class="time-label">1PM</text>
+  <line x1="40" y1="390" x2="760" y2="390" class="border-stroke-thin" />
+  <line x1="40" y1="400" x2="760" y2="400" class="ink-border-light" />
+  
+  <!-- 2PM -->
+  <text x="44" y="417" class="time-label">2PM</text>
+  <line x1="40" y1="420" x2="760" y2="420" class="border-stroke-thin" />
+  <line x1="40" y1="430" x2="760" y2="430" class="ink-border-light" />
+  
+  <!-- 3PM -->
+  <text x="44" y="447" class="time-label">3PM</text>
+  <line x1="40" y1="450" x2="760" y2="450" class="border-stroke-thin" />
+  <line x1="40" y1="460" x2="760" y2="460" class="ink-border-light" />
+  
+  <!-- 4PM -->
+  <text x="44" y="477" class="time-label">4PM</text>
+  <line x1="40" y1="480" x2="760" y2="480" class="border-stroke-thin" />
+  <line x1="40" y1="490" x2="760" y2="490" class="ink-border-light" />
+  
+  <!-- 5PM -->
+  <text x="44" y="507" class="time-label">5PM</text>
+  <line x1="40" y1="510" x2="760" y2="510" class="border-stroke-thin" />
+  <line x1="40" y1="520" x2="760" y2="520" class="ink-border-light" />
+  
+  <!-- 6PM -->
+  <text x="44" y="537" class="time-label">6PM</text>
+  <line x1="40" y1="540" x2="760" y2="540" class="border-stroke-thin" />
+  <line x1="40" y1="550" x2="760" y2="550" class="ink-border-light" />
+  
+  <!-- 7PM -->
+  <text x="44" y="567" class="time-label">7PM</text>
+  <line x1="40" y1="570" x2="760" y2="570" class="border-stroke-thin" />
+  
+  <!-- Bottom of time grid -->
+  <line x1="40" y1="560" x2="760" y2="560" class="border-stroke" />
+  
+  <!-- Accent block on Monday column - subtle time block -->
+  <rect x="153" y="181" width="101" height="28" fill="#8B7355" opacity="0.08" rx="0" />
+  <rect x="255" y="301" width="101" height="28" fill="#8B7355" opacity="0.08" rx="0" />
+  <rect x="561" y="421" width="101" height="28" fill="#8B7355" opacity="0.08" rx="0" />
+
+  <!-- ===== BOTTOM SECTION: THREE COLUMNS ===== -->
+  <!-- Bottom section background -->
+  <rect x="40" y="580" width="720" height="396" fill="none" />
+  
+  <!-- Vertical dividers for columns -->
+  <line x1="280" y1="580" x2="280" y2="976" class="border-stroke" />
+  <line x1="540" y1="580" x2="540" y2="976" class="border-stroke" />
+  
+  <!-- Horizontal divider -->
+  <line x1="40" y1="580" x2="760" y2="580" class="border-stroke" />
+
+  <!-- ===== COLUMN 1: PRIORITY ===== -->
+  <text x="60" y="615" class="section-title">PRIORITY</text>
+  <line x1="60" y1="624" x2="140" y2="624" class="border-stroke-accent" />
+  
+  <!-- Priority row 1 -->
+  <rect x="60" y="645" width="14" height="14" fill="none" stroke="#3D3A36" stroke-width="1.2" rx="0" />
+  <text x="84" y="656" class="checkbox-text">完成设计提案初稿</text>
+  
+  <!-- Priority row 2 -->
+  <rect x="60" y="680" width="14" height="14" fill="none" stroke="#3D3A36" stroke-width="1.2" rx="0" />
+  <text x="84" y="691" class="checkbox-text">客户会议准备材料</text>
+  
+  <!-- Priority row 3 -->
+  <rect x="60" y="715" width="14" height="14" fill="none" stroke="#3D3A36" stroke-width="1.2" rx="0" />
+  <text x="84" y="726" class="checkbox-text">健身课程报名缴费</text>
+  
+  <!-- Priority row 4 -->
+  <rect x="60" y="750" width="14" height="14" fill="none" stroke="#3D3A36" stroke-width="1.2" rx="0" />
+  <text x="84" y="761" class="checkbox-text">周末采购清单整理</text>
+  
+  <!-- Priority row 5 -->
+  <rect x="60" y="785" width="14" height="14" fill="none" stroke="#3D3A36" stroke-width="1.2" rx="0" />
+  <text x="84" y="796" class="checkbox-text">书籍归还图书馆</text>
+
+  <!-- ===== COLUMN 2: BUCKET LIST ===== -->
+  <text x="300" y="615" class="section-title">BUCKET LIST</text>
+  <line x1="300" y1="624" x2="380" y2="624" class="border-stroke-accent" />
+  
+  <!-- Bucket list items with accent dots -->
+  <circle cx="310" cy="652" r="4" fill="#8B7355" opacity="0.6" />
+  <text x="324" y="656" class="checkbox-text">学习陶艺基础课程</text>
+  
+  <circle cx="310" cy="687" r="4" fill="#8B7355" opacity="0.6" />
+  <text x="324" y="691" class="checkbox-text">京都徒步旅行计划</text>
+  
+  <circle cx="310" cy="722" r="4" fill="#8B7355" opacity="0.6" />
+  <text x="324" y="726" class="checkbox-text">完成100天绘画挑战</text>
+
+  <!-- ===== COLUMN 3: NOTES ===== -->
+  <text x="560" y="615" class="section-title">NOTES</text>
+  <line x1="560" y1="624" x2="640" y2="624" class="border-stroke-accent" />
+  
+  <!-- Notes area with subtle lines -->
+  <line x1="560" y1="652" x2="740" y2="652" class="ink-border-light" />
+  <line x1="560" y1="672" x2="740" y2="672" class="ink-border-light" />
+  <line x1="560" y1="692" x2="740" y2="692" class="ink-border-light" />
+  <line x1="560" y1="712" x2="740" y2="712" class="ink-border-light" />
+  <line x1="560" y1="732" x2="740" y2="732" class="ink-border-light" />
+  <line x1="560" y1="752" x2="740" y2="752" class="ink-border-light" />
+  <line x1="560" y1="772" x2="740" y2="772" class="ink-border-light" />
+  <line x1="560" y1="792" x2="740" y2="792" class="ink-border-light" />
+  <line x1="560" y1="812" x2="740" y2="812" class="ink-border-light" />
+  <line x1="560" y1="832" x2="740" y2="832" class="ink-border-light" />
+  
+  <text x="560" y="845" class="notes-text">灵感碎片 · 随手记录</text>
+
+  <!-- ===== DECORATIVE ELEMENTS ===== -->
+  <!-- Small ink wash accent - bottom left -->
+  <line x1="40" y1="960" x2="40" y2="940" class="ink-border" />
+  <line x1="40" y1="976" x2="60" y2="976" class="ink-border" />
+  
+  <!-- Subtle texture marks - scattered ink dots -->
+  <circle cx="152" cy="560" r="1.5" fill="#3D3A36" opacity="0.08" />
+  <circle cx="356" cy="560" r="1" fill="#3D3A36" opacity="0.06" />
+  <circle cx="662" cy="560" r="1.5" fill="#3D3A36" opacity="0.08" />
+  
+  <!-- Page number -->
+  <text x="740" y="960" class="subtitle" text-anchor="end">P.01</text>
+</svg>

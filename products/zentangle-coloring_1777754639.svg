@@ -1,0 +1,327 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      .border { fill: none; stroke: #000; stroke-width: 2; }
+      .line-main { fill: none; stroke: #000; stroke-width: 1.2; }
+      .line-fine { fill: none; stroke: #000; stroke-width: 0.5; }
+      .line-bold { fill: none; stroke: #000; stroke-width: 2; }
+      .line-dash { fill: none; stroke: #000; stroke-width: 0.4; stroke-dasharray: 3,3; }
+      .text-title { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 18px; fill: #000; font-weight: bold; }
+      .text-sub { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; fill: #000; letter-spacing: 2px; }
+      .text-eng { font-family: 'Georgia', 'Times New Roman', serif; font-size: 9px; fill: #000; font-style: italic; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- 外边框 -->
+  <rect x="10" y="10" width="780" height="980" class="border" rx="4" ry="4"/>
+  <rect x="14" y="14" width="772" height="972" class="line-fine" rx="3" ry="3"/>
+
+  <!-- 顶部装饰线 -->
+  <line x1="200" y1="38" x2="600" y2="38" class="line-fine"/>
+  <line x1="200" y1="41" x2="600" y2="41" class="line-fine"/>
+
+  <!-- 标题 -->
+  <text x="400" y="68" text-anchor="middle" class="text-title">曼陀罗禅绕画</text>
+  <text x="400" y="86" text-anchor="middle" class="text-eng">Mandala Zentangle Coloring Page</text>
+
+  <!-- 底部说明 -->
+  <text x="400" y="958" text-anchor="middle" class="text-sub">解压涂色 · 静心疗愈</text>
+  <text x="400" y="974" text-anchor="middle" class="text-eng">Relax · Focus · Create</text>
+
+  <!-- 底部装饰线 -->
+  <line x1="200" y1="940" x2="600" y2="940" class="line-fine"/>
+  <line x1="200" y1="943" x2="600" y2="943" class="line-fine"/>
+
+  <!-- 曼陀罗主体 - 以(400, 480)为中心 -->
+  <g transform="translate(400, 480)">
+
+    <!-- 最外层装饰边框 - 大圆 -->
+    <circle cx="0" cy="0" r="340" class="line-bold"/>
+    <circle cx="0" cy="0" r="335" class="line-fine"/>
+    <circle cx="0" cy="0" r="330" class="line-main"/>
+
+    <!-- 外层花瓣装饰 - 24瓣 -->
+    <g class="line-main">
+      <g transform="rotate(0)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(15)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(30)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(45)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(60)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(75)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(90)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(105)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(120)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(135)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(150)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(165)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(180)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(195)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(210)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(225)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(240)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(255)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(270)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(285)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(300)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(315)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(330)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+      <g transform="rotate(345)"><path d="M0,-330 Q25,-290 0,-250 Q-25,-290 0,-330Z"/></g>
+    </g>
+
+    <!-- 第二层 - 圆环装饰 -->
+    <circle cx="0" cy="0" r="245" class="line-bold"/>
+    <circle cx="0" cy="0" r="240" class="line-fine"/>
+
+    <!-- 第二层 - 24个装饰点 -->
+    <g class="line-main">
+      <circle cx="0" cy="-242" r="6"/>
+      <circle cx="62.7" cy="-233.8" r="6"/>
+      <circle cx="121" cy="-209.6" r="6"/>
+      <circle cx="171.1" cy="-171.1" r="6"/>
+      <circle cx="209.6" cy="-121" r="6"/>
+      <circle cx="233.8" cy="-62.7" r="6"/>
+      <circle cx="242" cy="0" r="6"/>
+      <circle cx="233.8" cy="62.7" r="6"/>
+      <circle cx="209.6" cy="121" r="6"/>
+      <circle cx="171.1" cy="171.1" r="6"/>
+      <circle cx="121" cy="209.6" r="6"/>
+      <circle cx="62.7" cy="233.8" r="6"/>
+      <circle cx="0" cy="242" r="6"/>
+      <circle cx="-62.7" cy="233.8" r="6"/>
+      <circle cx="-121" cy="209.6" r="6"/>
+      <circle cx="-171.1" cy="171.1" r="6"/>
+      <circle cx="-209.6" cy="121" r="6"/>
+      <circle cx="-233.8" cy="62.7" r="6"/>
+      <circle cx="-242" cy="0" r="6"/>
+      <circle cx="-233.8" cy="-62.7" r="6"/>
+      <circle cx="-209.6" cy="-121" r="6"/>
+      <circle cx="-171.1" cy="-171.1" r="6"/>
+      <circle cx="-121" cy="-209.6" r="6"/>
+      <circle cx="-62.7" cy="-233.8" r="6"/>
+    </g>
+
+    <!-- 第二层与第三层之间的连接线 -->
+    <g class="line-fine">
+      <line x1="0" y1="-242" x2="0" y2="-210"/>
+      <line x1="62.7" y1="-233.8" x2="54.4" y2="-202.9"/>
+      <line x1="121" y1="-209.6" x2="105" y2="-181.9"/>
+      <line x1="171.1" y1="-171.1" x2="148.5" y2="-148.5"/>
+      <line x1="209.6" y1="-121" x2="181.9" y2="-105"/>
+      <line x1="233.8" y1="-62.7" x2="202.9" y2="-54.4"/>
+      <line x1="242" y1="0" x2="210" y2="0"/>
+      <line x1="233.8" y1="62.7" x2="202.9" y2="54.4"/>
+      <line x1="209.6" y1="121" x2="181.9" y2="105"/>
+      <line x1="171.1" y1="171.1" x2="148.5" y2="148.5"/>
+      <line x1="121" y1="209.6" x2="105" y2="181.9"/>
+      <line x1="62.7" y1="233.8" x2="54.4" y2="202.9"/>
+      <line x1="0" y1="242" x2="0" y2="210"/>
+      <line x1="-62.7" y1="233.8" x2="-54.4" y2="202.9"/>
+      <line x1="-121" y1="209.6" x2="-105" y2="181.9"/>
+      <line x1="-171.1" y1="171.1" x2="-148.5" y2="148.5"/>
+      <line x1="-209.6" y1="121" x2="-181.9" y2="105"/>
+      <line x1="-233.8" y1="62.7" x2="-202.9" y2="54.4"/>
+      <line x1="-242" y1="0" x2="-210" y2="0"/>
+      <line x1="-233.8" y1="-62.7" x2="-202.9" y2="-54.4"/>
+      <line x1="-209.6" y1="-121" x2="-181.9" y2="-105"/>
+      <line x1="-171.1" y1="-171.1" x2="-148.5" y2="-148.5"/>
+      <line x1="-121" y1="-209.6" x2="-105" y2="-181.9"/>
+      <line x1="-62.7" y1="-233.8" x2="-54.4" y2="-202.9"/>
+    </g>
+
+    <!-- 第三层 - 主花瓣层 12瓣 -->
+    <circle cx="0" cy="0" r="210" class="line-main"/>
+    <circle cx="0" cy="0" r="205" class="line-fine"/>
+
+    <g class="line-bold">
+      <g transform="rotate(0)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(30)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(60)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(90)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(120)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(150)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(180)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(210)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(240)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(270)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(300)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+      <g transform="rotate(330)"><path d="M0,-205 Q35,-170 0,-130 Q-35,-170 0,-205Z"/></g>
+    </g>
+
+    <!-- 花瓣内部装饰线 -->
+    <g class="line-fine">
+      <g transform="rotate(0)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(30)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(60)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(90)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(120)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(150)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(180)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(210)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(240)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(270)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(300)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+      <g transform="rotate(330)"><path d="M0,-195 Q25,-165 0,-135" fill="none"/></g>
+    </g>
+
+    <!-- 第四层 - 圆环 -->
+    <circle cx="0" cy="0" r="125" class="line-bold"/>
+    <circle cx="0" cy="0" r="120" class="line-fine"/>
+
+    <!-- 第四层 - 12个菱形装饰 -->
+    <g class="line-main">
+      <g transform="rotate(0)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(30)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(60)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(90)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(120)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(150)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(180)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(210)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(240)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(270)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(300)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+      <g transform="rotate(330)"><polygon points="0,-120 10,-108 0,-96 -10,-108"/></g>
+    </g>
+
+    <!-- 菱形之间的连接弧线 -->
+    <g class="line-fine">
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(0)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(30)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(60)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(90)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(120)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(150)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(180)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(210)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(240)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(270)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(300)"/>
+      <path d="M10,-108 Q30,-100 10,-84" transform="rotate(330)"/>
+    </g>
+
+    <!-- 第五层 -->
+    <circle cx="0" cy="0" r="80" class="line-main"/>
+    <circle cx="0" cy="0" r="75" class="line-fine"/>
+
+    <!-- 第五层 - 8个花瓣 -->
+    <g class="line-main">
+      <g transform="rotate(0)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(45)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(90)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(135)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(180)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(225)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(270)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+      <g transform="rotate(315)"><path d="M0,-75 Q20,-60 0,-40 Q-20,-60 0,-75Z"/></g>
+    </g>
+
+    <!-- 第五层内部装饰 -->
+    <g class="line-fine">
+      <g transform="rotate(0)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(45)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(90)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(135)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(180)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(225)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(270)"><circle cx="0" cy="-57" r="4"/></g>
+      <g transform="rotate(315)"><circle cx="0" cy="-57" r="4"/></g>
+    </g>
+
+    <!-- 第六层 -->
+    <circle cx="0" cy="0" r="35" class="line-bold"/>
+    <circle cx="0" cy="0" r="30" class="line-fine"/>
+
+    <!-- 第六层 - 8个装饰点 -->
+    <g class="line-main">
+      <circle cx="0" cy="-32" r="3"/>
+      <circle cx="22.6" cy="-22.6" r="3"/>
+      <circle cx="32" cy="0" r="3"/>
+      <circle cx="22.6" cy="22.6" r="3"/>
+      <circle cx="0" cy="32" r="3"/>
+      <circle cx="-22.6" cy="22.6" r="3"/>
+      <circle cx="-32" cy="0" r="3"/>
+      <circle cx="-22.6" cy="-22.6" r="3"/>
+    </g>
+
+    <!-- 第六层连接 -->
+    <g class="line-fine">
+      <line x1="0" y1="-30" x2="0" y2="-20"/>
+      <line x1="21.2" y1="-21.2" x2="14.1" y2="-14.1"/>
+      <line x1="30" y1="0" x2="20" y2="0"/>
+      <line x1="21.2" y1="21.2" x2="14.1" y2="14.1"/>
+      <line x1="0" y1="30" x2="0" y2="20"/>
+      <line x1="-21.2" y1="21.2" x2="-14.1" y2="14.1"/>
+      <line x1="-30" y1="0" x2="-20" y2="0"/>
+      <line x1="-21.2" y1="-21.2" x2="-14.1" y2="-14.1"/>
+    </g>
+
+    <!-- 中心 -->
+    <circle cx="0" cy="0" r="15" class="line-bold"/>
+    <circle cx="0" cy="0" r="10" class="line-main"/>
+    <circle cx="0" cy="0" r="5" class="line-fine"/>
+
+    <!-- 中心装饰 - 8个点 -->
+    <g class="line-fine">
+      <circle cx="0" cy="-12" r="1.5"/>
+      <circle cx="8.5" cy="-8.5" r="1.5"/>
+      <circle cx="12" cy="0" r="1.5"/>
+      <circle cx="8.5" cy="8.5" r="1.5"/>
+      <circle cx="0" cy="12" r="1.5"/>
+      <circle cx="-8.5" cy="8.5" r="1.5"/>
+      <circle cx="-12" cy="0" r="1.5"/>
+      <circle cx="-8.5" cy="-8.5" r="1.5"/>
+    </g>
+
+    <!-- 最外层 - 角落装饰元素 4个 -->
+    <g class="line-fine">
+      <!-- 右上 -->
+      <path d="M280,-280 Q300,-260 280,-240 Q260,-260 280,-280Z" transform="rotate(0)"/>
+      <!-- 左上 -->
+      <path d="M280,-280 Q300,-260 280,-240 Q260,-260 280,-280Z" transform="rotate(90)"/>
+      <!-- 左下 -->
+      <path d="M280,-280 Q300,-260 280,-240 Q260,-260 280,-280Z" transform="rotate(180)"/>
+      <!-- 右下 -->
+      <path d="M280,-280 Q300,-260 280,-240 Q260,-260 280,-280Z" transform="rotate(270)"/>
+    </g>
+
+    <!-- 额外装饰 - 4个方向的小花 -->
+    <g class="line-fine">
+      <g transform="rotate(0) translate(0,-345)">
+        <circle cx="0" cy="-8" r="3"/>
+        <circle cx="7" cy="-3" r="3"/>
+        <circle cx="4" cy="6" r="3"/>
+        <circle cx="-4" cy="6" r="3"/>
+        <circle cx="-7" cy="-3" r="3"/>
+      </g>
+      <g transform="rotate(90) translate(0,-345)">
+        <circle cx="0" cy="-8" r="3"/>
+        <circle cx="7" cy="-3" r="3"/>
+        <circle cx="4" cy="6" r="3"/>
+        <circle cx="-4" cy="6" r="3"/>
+        <circle cx="-7" cy="-3" r="3"/>
+      </g>
+      <g transform="rotate(180) translate(0,-345)">
+        <circle cx="0" cy="-8" r="3"/>
+        <circle cx="7" cy="-3" r="3"/>
+        <circle cx="4" cy="6" r="3"/>
+        <circle cx="-4" cy="6" r="3"/>
+        <circle cx="-7" cy="-3" r="3"/>
+      </g>
+      <g transform="rotate(270) translate(0,-345)">
+        <circle cx="0" cy="-8" r="3"/>
+        <circle cx="7" cy="-3" r="3"/>
+        <circle cx="4" cy="6" r="3"/>
+        <circle cx="-4" cy="6" r="3"/>
+        <circle cx="-7" cy="-3" r="3"/>
+      </g>
+    </g>
+
+    <!-- 虚线装饰圆环 -->
+    <circle cx="0" cy="0" r="290" class="line-dash"/>
+    <circle cx="0" cy="0" r="160" class="line-dash"/>
+    <circle cx="0" cy="0" r="100" class="line-dash"/>
+    <circle cx="0" cy="0" r="55" class="line-dash"/>
+
+  </g>
+
+</svg>

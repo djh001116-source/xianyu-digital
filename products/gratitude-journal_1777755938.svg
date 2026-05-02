@@ -1,0 +1,162 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=ZCOOL+XiaoWei&display=swap');
+      
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .bg { fill: #F8F4F0; }
+      .border { fill: none; stroke: #E0D8D0; stroke-width: 1.5; }
+      .border-subtle { fill: none; stroke: #E0D8D0; stroke-width: 0.8; }
+      .line { fill: none; stroke: #B5ADA4; stroke-width: 0.6; }
+      .line-thick { fill: none; stroke: #B5ADA4; stroke-width: 1; }
+      
+      .title-main { 
+        font-family: 'STKaiti', 'KaiTi', 'ZCOOL XiaoWei', serif;
+        font-size: 28px;
+        fill: #3C3633;
+        letter-spacing: 6px;
+      }
+      .title-sub {
+        font-family: 'STKaiti', 'KaiTi', 'ZCOOL XiaoWei', serif;
+        font-size: 12px;
+        fill: #9B7B7B;
+        letter-spacing: 3px;
+      }
+      .section-title {
+        font-family: 'STKaiti', 'KaiTi', 'ZCOOL XiaoWei', serif;
+        font-size: 13px;
+        fill: #3C3633;
+        letter-spacing: 2px;
+      }
+      .section-title-en {
+        font-family: 'ZCOOL XiaoWei', serif;
+        font-size: 10px;
+        fill: #9B7B7B;
+        letter-spacing: 1.5px;
+        font-style: italic;
+      }
+      .date-text {
+        font-family: 'STKaiti', 'KaiTi', 'ZCOOL XiaoWei', serif;
+        font-size: 14px;
+        fill: #3C3633;
+        letter-spacing: 1px;
+      }
+      .date-placeholder {
+        font-family: 'ZCOOL XiaoWei', serif;
+        font-size: 11px;
+        fill: #B5ADA4;
+        letter-spacing: 1px;
+      }
+      .quote-mark {
+        font-family: 'ZCOOL XiaoWei', serif;
+        font-size: 42px;
+        fill: #9B7B7B;
+        opacity: 0.35;
+      }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+  
+  <!-- Outer border -->
+  <rect class="border" x="18" y="18" width="764" height="964" rx="0" ry="0"/>
+  
+  <!-- Inner border -->
+  <rect class="border-subtle" x="28" y="28" width="744" height="944" rx="0" ry="0"/>
+
+  <!-- Decorative top corner line -->
+  <line class="line" x1="28" y1="75" x2="772" y2="75"/>
+
+  <!-- Title section -->
+  <text class="title-main" x="400" y="130" text-anchor="middle">GRATITUDE</text>
+  <text class="title-sub" x="400" y="155" text-anchor="middle">感 恩 日 记</text>
+
+  <!-- Subtle accent dot under title -->
+  <circle cx="400" cy="170" r="2.5" fill="#9B7B7B" opacity="0.5"/>
+
+  <!-- Date section -->
+  <rect class="border-subtle" x="45" y="200" width="710" height="48" rx="0" ry="0"/>
+  
+  <text class="date-text" x="65" y="230">日期</text>
+  <text class="date-placeholder" x="105" y="230">— — — — 年 — — 月 — — 日</text>
+  
+  <!-- Small accent line in date box -->
+  <line class="line" x1="180" y1="220" x2="280" y2="220"/>
+
+  <!-- Section 1: Today I'm Grateful For -->
+  <text class="section-title" x="50" y="295">今日感恩</text>
+  <text class="section-title-en" x="130" y="295">Today I'm Grateful For</text>
+
+  <!-- 3 writing lines -->
+  <line class="line-thick" x1="50" y1="320" x2="750" y2="320"/>
+  <line class="line-thick" x1="50" y1="365" x2="750" y2="365"/>
+  <line class="line-thick" x1="50" y1="410" x2="750" y2="410"/>
+
+  <!-- Small decorative dot at end of first line -->
+  <circle cx="740" cy="318" r="2" fill="#9B7B7B" opacity="0.3"/>
+
+  <!-- Section 2: Today's Highlight -->
+  <text class="section-title" x="50" y="470">今日亮点</text>
+  <text class="section-title-en" x="130" y="470">Today's Highlight</text>
+
+  <!-- Writing area with lines -->
+  <line class="line-thick" x1="50" y1="500" x2="750" y2="500"/>
+  <line class="line-thick" x1="50" y1="545" x2="750" y2="545"/>
+  <line class="line-thick" x1="50" y1="590" x2="750" y2="590"/>
+  <line class="line-thick" x1="50" y1="635" x2="750" y2="635"/>
+  <line class="line-thick" x1="50" y1="680" x2="750" y2="680"/>
+
+  <!-- Section 3: A Kindness I Received -->
+  <text class="section-title" x="50" y="740">收到的善意</text>
+  <text class="section-title-en" x="150" y="740">A Kindness I Received</text>
+
+  <line class="line-thick" x1="50" y1="770" x2="750" y2="770"/>
+  <line class="line-thick" x1="50" y1="815" x2="750" y2="815"/>
+
+  <!-- Section 4: Affirmation of the Day -->
+  <text class="section-title" x="50" y="875">今日肯定语</text>
+  <text class="section-title-en" x="150" y="875">Affirmation of the Day</text>
+
+  <!-- Quote marks -->
+  <text class="quote-mark" x="45" y="930">"</text>
+  
+  <line class="line-thick" x1="85" y1="910" x2="750" y2="910"/>
+
+  <!-- Closing quote mark -->
+  <text class="quote-mark" x="730" y="940" text-anchor="end">"</text>
+
+  <!-- Hand-drawn flower illustration in bottom right corner -->
+  <g transform="translate(700, 920)" opacity="0.55">
+    <!-- Stem -->
+    <path d="M15,35 Q12,25 14,15 Q15,10 16,5" fill="none" stroke="#9B7B7B" stroke-width="1.2" stroke-linecap="round"/>
+    
+    <!-- Leaf left -->
+    <path d="M14,22 Q8,18 6,22 Q8,26 14,24" fill="none" stroke="#9B7B7B" stroke-width="0.8" stroke-linecap="round"/>
+    
+    <!-- Leaf right -->
+    <path d="M15,15 Q20,11 22,15 Q20,19 15,17" fill="none" stroke="#9B7B7B" stroke-width="0.8" stroke-linecap="round"/>
+    
+    <!-- Petal 1 -->
+    <path d="M15,5 Q18,0 15,-3 Q12,0 15,5" fill="none" stroke="#9B7B7B" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Petal 2 -->
+    <path d="M15,5 Q20,2 19,-2 Q16,0 15,5" fill="none" stroke="#9B7B7B" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Petal 3 -->
+    <path d="M15,5 Q10,2 11,-2 Q14,0 15,5" fill="none" stroke="#9B7B7B" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Petal 4 -->
+    <path d="M15,5 Q18,6 17,2 Q15,3 15,5" fill="none" stroke="#9B7B7B" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Petal 5 -->
+    <path d="M15,5 Q12,6 13,2 Q15,3 15,5" fill="none" stroke="#9B7B7B" stroke-width="1" stroke-linecap="round"/>
+    
+    <!-- Center dot -->
+    <circle cx="15" cy="4" r="1.2" fill="#9B7B7B"/>
+  </g>
+
+  <!-- Page number -->
+  <text class="title-sub" x="400" y="970" text-anchor="middle" font-size="9" fill="#B5ADA4">— 1 —</text>
+</svg>

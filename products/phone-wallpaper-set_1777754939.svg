@@ -1,0 +1,102 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+    </style>
+    <!-- 莫兰迪色系渐变 -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#F5F0EB"/>
+      <stop offset="50%" stop-color="#E8E0D8"/>
+      <stop offset="100%" stop-color="#DCD3CA"/>
+    </linearGradient>
+    
+    <!-- 雾蓝渐变 -->
+    <linearGradient id="blueGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#A3B5C4" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#8BA0B3" stop-opacity="0.3"/>
+    </linearGradient>
+    
+    <!-- 灰粉渐变 -->
+    <linearGradient id="pinkGrad" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#D4B8B0" stop-opacity="0.5"/>
+      <stop offset="100%" stop-color="#C4A59C" stop-opacity="0.2"/>
+    </linearGradient>
+    
+    <!-- 鼠尾草绿渐变 -->
+    <linearGradient id="greenGrad" x1="50%" y1="100%" x2="50%" y2="0%">
+      <stop offset="0%" stop-color="#9BA89A" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#B5C4B0" stop-opacity="0.1"/>
+    </linearGradient>
+    
+    <!-- 燕麦色渐变 -->
+    <linearGradient id="oatGrad" x1="0%" y1="50%" x2="100%" y2="50%">
+      <stop offset="0%" stop-color="#D4C9B8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#C8BBA8" stop-opacity="0.1"/>
+    </linearGradient>
+
+    <!-- 柔光滤镜 -->
+    <filter id="softGlow">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    
+    <filter id="blurLarge">
+      <feGaussianBlur stdDeviation="8"/>
+    </filter>
+    
+    <filter id="blurMedium">
+      <feGaussianBlur stdDeviation="5"/>
+    </filter>
+  </defs>
+
+  <!-- 背景 -->
+  <rect width="800" height="1000" fill="url(#bgGrad)"/>
+  
+  <!-- 边框 -->
+  <rect x="8" y="8" width="784" height="984" fill="none" stroke="#C4B8AC" stroke-width="1" rx="2"/>
+  <rect x="12" y="12" width="776" height="976" fill="none" stroke="#D4C9BC" stroke-width="0.5" rx="1"/>
+
+  <!-- 抽象几何形态 - 大圆形 -->
+  <circle cx="580" cy="300" r="220" fill="url(#blueGrad)" filter="url(#blurLarge)" opacity="0.7"/>
+  
+  <!-- 抽象几何形态 - 椭圆 -->
+  <ellipse cx="250" cy="650" rx="280" ry="180" fill="url(#pinkGrad)" filter="url(#blurLarge)" opacity="0.6"/>
+  
+  <!-- 抽象几何形态 - 三角形（用多边形实现） -->
+  <polygon points="400,150 650,550 150,550" fill="url(#greenGrad)" filter="url(#blurMedium)" opacity="0.4"/>
+  
+  <!-- 抽象几何形态 - 小圆形 -->
+  <circle cx="650" cy="750" r="100" fill="url(#oatGrad)" filter="url(#blurMedium)" opacity="0.5"/>
+  
+  <!-- 抽象几何形态 - 细长椭圆 -->
+  <ellipse cx="150" cy="250" rx="60" ry="150" fill="url(#oatGrad)" filter="url(#blurMedium)" opacity="0.4" transform="rotate(-30, 150, 250)"/>
+
+  <!-- 抽象几何形态 - 半透明弧形 -->
+  <path d="M 100,800 Q 300,700 500,850 Q 650,950 750,800" fill="none" stroke="#C4B8AC" stroke-width="0.8" opacity="0.3"/>
+  <path d="M 50,850 Q 250,750 450,900 Q 600,1000 780,850" fill="none" stroke="#B5A898" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- 装饰性小点 -->
+  <circle cx="120" cy="180" r="3" fill="#C4B8AC" opacity="0.3"/>
+  <circle cx="680" cy="120" r="2" fill="#C4B8AC" opacity="0.25"/>
+  <circle cx="720" cy="500" r="2.5" fill="#C4B8AC" opacity="0.2"/>
+  <circle cx="80" cy="600" r="2" fill="#C4B8AC" opacity="0.25"/>
+  <circle cx="350" cy="880" r="3" fill="#C4B8AC" opacity="0.2"/>
+  <circle cx="600" cy="920" r="2" fill="#C4B8AC" opacity="0.3"/>
+  <circle cx="200" cy="400" r="1.5" fill="#C4B8AC" opacity="0.2"/>
+  <circle cx="500" cy="100" r="2" fill="#C4B8AC" opacity="0.15"/>
+
+  <!-- 装饰性短线 -->
+  <line x1="60" y1="350" x2="100" y2="350" stroke="#C4B8AC" stroke-width="0.5" opacity="0.2"/>
+  <line x1="700" y1="650" x2="740" y2="650" stroke="#C4B8AC" stroke-width="0.5" opacity="0.2"/>
+  <line x1="400" y1="60" x2="430" y2="60" stroke="#C4B8AC" stroke-width="0.5" opacity="0.15"/>
+  <line x1="350" y1="940" x2="390" y2="940" stroke="#C4B8AC" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- 底部细线装饰 -->
+  <line x1="300" y1="930" x2="500" y2="930" stroke="#C4B8AC" stroke-width="0.5" opacity="0.25"/>
+
+  <!-- 极简英文装饰（小字，无干扰） -->
+  <text x="400" y="960" text-anchor="middle" font-family="'Georgia', 'Times New Roman', serif" font-size="9" fill="#C4B8AC" letter-spacing="4" opacity="0.35">ABSTRACT</text>
+</svg>

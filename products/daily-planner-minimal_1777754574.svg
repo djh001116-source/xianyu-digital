@@ -1,0 +1,293 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+      
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .bg { fill: #FBFBF9; }
+      .border { fill: none; stroke: #D4D9D1; stroke-width: 2; }
+      
+      /* Title styles */
+      .title-main { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 28px; font-weight: 600; fill: #3A3A3A; letter-spacing: 6px; }
+      .title-sub { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 11px; font-weight: 300; fill: #A8A8A8; letter-spacing: 3px; }
+      
+      /* Section headers */
+      .section-title { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; font-weight: 500; fill: #5A6A5E; letter-spacing: 2px; }
+      .section-line { fill: none; stroke: #D4D9D1; stroke-width: 0.8; }
+      
+      /* Time axis */
+      .time-text { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 10px; font-weight: 400; fill: #A8A8A8; text-anchor: end; }
+      .time-line-main { fill: none; stroke: #E8EAE5; stroke-width: 0.8; }
+      .time-line-half { fill: none; stroke: #F0F1EE; stroke-width: 0.5; stroke-dasharray: 3,4; }
+      
+      /* Date styles */
+      .date-day { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 32px; font-weight: 300; fill: #3A3A3A; }
+      .date-month { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 13px; font-weight: 400; fill: #8A9A8E; letter-spacing: 1px; }
+      .date-weekday { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 12px; font-weight: 400; fill: #B0B8B0; letter-spacing: 1px; }
+      
+      /* Task styles */
+      .task-check { fill: none; stroke: #BDC8BD; stroke-width: 1.5; }
+      .task-text { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 12px; font-weight: 400; fill: #4A4A4A; }
+      .task-text-placeholder { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 12px; font-weight: 300; fill: #C8CEC5; }
+      
+      /* Water tracker */
+      .water-dot { fill: none; stroke: #B8C8C0; stroke-width: 1.5; }
+      .water-dot-filled { fill: #C8D8D0; stroke: #B8C8C0; stroke-width: 1.5; }
+      .water-label { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 9px; font-weight: 400; fill: #8A9A8E; text-anchor: middle; }
+      
+      /* Mood */
+      .mood-circle { fill: none; stroke: #D0D8D0; stroke-width: 1.2; }
+      .mood-circle-selected { fill: #E0E8E0; stroke: #B8C8B8; stroke-width: 1.5; }
+      .mood-emoji { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 16px; text-anchor: middle; }
+      .mood-label { font-family: 'Inter', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 9px; font-weight: 400; fill: #8A9A8E; text-anchor: middle; }
+      
+      /* Notes */
+      .notes-line { fill: none; stroke: #EDEFEA; stroke-width: 0.5; }
+      
+      /* Decorative elements */
+      .dot-deco { fill: #E0E6DE; }
+      .line-deco { fill: none; stroke: #E8EDE5; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="800" height="1000" />
+  
+  <!-- Border -->
+  <rect class="border" x="20" y="20" width="760" height="960" rx="4" />
+
+  <!-- Decorative corner dots -->
+  <circle class="dot-deco" cx="40" cy="40" r="2.5" />
+  <circle class="dot-deco" cx="760" cy="40" r="2.5" />
+  <circle class="dot-deco" cx="40" cy="960" r="2.5" />
+  <circle class="dot-deco" cx="760" cy="960" r="2.5" />
+
+  <!-- Title Section -->
+  <text class="title-main" x="400" y="72" text-anchor="middle">TODAY</text>
+  <text class="title-sub" x="400" y="92" text-anchor="middle">一 日 一 页</text>
+  <line class="section-line" x1="200" y1="102" x2="600" y2="102" />
+
+  <!-- Date Section -->
+  <g transform="translate(400, 148)">
+    <text class="date-day" x="-60" y="0" text-anchor="start" dominant-baseline="middle">24</text>
+    <text class="date-month" x="-60" y="18" text-anchor="start">MAR 2025</text>
+    <text class="date-weekday" x="60" y="0" text-anchor="end" dominant-baseline="middle">星期一 · MONDAY</text>
+  </g>
+
+  <!-- Divider line -->
+  <line class="section-line" x1="50" y1="178" x2="750" y2="178" />
+
+  <!-- Time Axis Section -->
+  <g transform="translate(70, 210)">
+    <text class="section-title" x="0" y="0">TIME · 时间轴</text>
+    <line class="section-line" x1="0" y1="8" x2="680" y2="8" />
+    
+    <!-- 6:00 AM -->
+    <text class="time-text" x="-5" y="38">6:00</text>
+    <line class="time-line-main" x1="0" y1="42" x2="680" y2="42" />
+    <line class="time-line-half" x1="0" y1="62" x2="680" y2="62" />
+    
+    <!-- 7:00 AM -->
+    <text class="time-text" x="-5" y="88">7:00</text>
+    <line class="time-line-main" x1="0" y1="92" x2="680" y2="92" />
+    <line class="time-line-half" x1="0" y1="112" x2="680" y2="112" />
+    
+    <!-- 8:00 AM -->
+    <text class="time-text" x="-5" y="138">8:00</text>
+    <line class="time-line-main" x1="0" y1="142" x2="680" y2="142" />
+    <line class="time-line-half" x1="0" y1="162" x2="680" y2="162" />
+    
+    <!-- 9:00 AM -->
+    <text class="time-text" x="-5" y="188">9:00</text>
+    <line class="time-line-main" x1="0" y1="192" x2="680" y2="192" />
+    <line class="time-line-half" x1="0" y1="212" x2="680" y2="212" />
+    
+    <!-- 10:00 AM -->
+    <text class="time-text" x="-5" y="238">10:00</text>
+    <line class="time-line-main" x1="0" y1="242" x2="680" y2="242" />
+    <line class="time-line-half" x1="0" y1="262" x2="680" y2="262" />
+    
+    <!-- 11:00 AM -->
+    <text class="time-text" x="-5" y="288">11:00</text>
+    <line class="time-line-main" x1="0" y1="292" x2="680" y2="292" />
+    <line class="time-line-half" x1="0" y1="312" x2="680" y2="312" />
+    
+    <!-- 12:00 PM -->
+    <text class="time-text" x="-5" y="338">12:00</text>
+    <line class="time-line-main" x1="0" y1="342" x2="680" y2="342" />
+    <line class="time-line-half" x1="0" y1="362" x2="680" y2="362" />
+    
+    <!-- 1:00 PM -->
+    <text class="time-text" x="-5" y="388">13:00</text>
+    <line class="time-line-main" x1="0" y1="392" x2="680" y2="392" />
+    <line class="time-line-half" x1="0" y1="412" x2="680" y2="412" />
+    
+    <!-- 2:00 PM -->
+    <text class="time-text" x="-5" y="438">14:00</text>
+    <line class="time-line-main" x1="0" y1="442" x2="680" y2="442" />
+    <line class="time-line-half" x1="0" y1="462" x2="680" y2="462" />
+    
+    <!-- 3:00 PM -->
+    <text class="time-text" x="-5" y="488">15:00</text>
+    <line class="time-line-main" x1="0" y1="492" x2="680" y2="492" />
+    <line class="time-line-half" x1="0" y1="512" x2="680" y2="512" />
+    
+    <!-- 4:00 PM -->
+    <text class="time-text" x="-5" y="538">16:00</text>
+    <line class="time-line-main" x1="0" y1="542" x2="680" y2="542" />
+    <line class="time-line-half" x1="0" y1="562" x2="680" y2="562" />
+    
+    <!-- 5:00 PM -->
+    <text class="time-text" x="-5" y="588">17:00</text>
+    <line class="time-line-main" x1="0" y1="592" x2="680" y2="592" />
+    <line class="time-line-half" x1="0" y1="612" x2="680" y2="612" />
+    
+    <!-- 6:00 PM -->
+    <text class="time-text" x="-5" y="638">18:00</text>
+    <line class="time-line-main" x1="0" y1="642" x2="680" y2="642" />
+    <line class="time-line-half" x1="0" y1="662" x2="680" y2="662" />
+    
+    <!-- 7:00 PM -->
+    <text class="time-text" x="-5" y="688">19:00</text>
+    <line class="time-line-main" x1="0" y1="692" x2="680" y2="692" />
+    <line class="time-line-half" x1="0" y1="712" x2="680" y2="712" />
+    
+    <!-- 8:00 PM -->
+    <text class="time-text" x="-5" y="738">20:00</text>
+    <line class="time-line-main" x1="0" y1="742" x2="680" y2="742" />
+    <line class="time-line-half" x1="0" y1="762" x2="680" y2="762" />
+    
+    <!-- 9:00 PM -->
+    <text class="time-text" x="-5" y="788">21:00</text>
+    <line class="time-line-main" x1="0" y1="792" x2="680" y2="792" />
+    <line class="time-line-half" x1="0" y1="812" x2="680" y2="812" />
+    
+    <!-- 10:00 PM -->
+    <text class="time-text" x="-5" y="838">22:00</text>
+    <line class="time-line-main" x1="0" y1="842" x2="680" y2="842" />
+    <line class="time-line-half" x1="0" y1="862" x2="680" y2="862" />
+    
+    <!-- 11:00 PM -->
+    <text class="time-text" x="-5" y="888">23:00</text>
+    <line class="time-line-main" x1="0" y1="892" x2="680" y2="892" />
+    <line class="time-line-half" x1="0" y1="912" x2="680" y2="912" />
+    
+    <!-- 12:00 AM -->
+    <text class="time-text" x="-5" y="938">0:00</text>
+    <line class="time-line-main" x1="0" y1="942" x2="680" y2="942" />
+  </g>
+
+  <!-- Right Column: Tasks, Water, Mood, Notes -->
+  
+  <!-- Top 3 Tasks -->
+  <g transform="translate(420, 210)">
+    <text class="section-title" x="0" y="0">TOP 3 · 今日要事</text>
+    <line class="section-line" x1="0" y1="8" x2="330" y2="8" />
+    
+    <!-- Task 1 -->
+    <rect class="task-check" x="0" y="24" width="14" height="14" rx="2" />
+    <text class="task-text-placeholder" x="24" y="35">写下今天最重要的任务</text>
+    
+    <!-- Task 2 -->
+    <rect class="task-check" x="0" y="54" width="14" height="14" rx="2" />
+    <text class="task-text-placeholder" x="24" y="65">写下今天最重要的任务</text>
+    
+    <!-- Task 3 -->
+    <rect class="task-check" x="0" y="84" width="14" height="14" rx="2" />
+    <text class="task-text-placeholder" x="24" y="95">写下今天最重要的任务</text>
+  </g>
+
+  <!-- Water Tracker -->
+  <g transform="translate(420, 340)">
+    <text class="section-title" x="0" y="0">WATER · 喝水记录</text>
+    <line class="section-line" x1="0" y1="8" x2="330" y2="8" />
+    
+    <!-- 8 glasses -->
+    <g transform="translate(0, 30)">
+      <circle class="water-dot" cx="15" cy="0" r="12" />
+      <circle class="water-dot" cx="55" cy="0" r="12" />
+      <circle class="water-dot" cx="95" cy="0" r="12" />
+      <circle class="water-dot" cx="135" cy="0" r="12" />
+      <circle class="water-dot" cx="175" cy="0" r="12" />
+      <circle class="water-dot" cx="215" cy="0" r="12" />
+      <circle class="water-dot" cx="255" cy="0" r="12" />
+      <circle class="water-dot" cx="295" cy="0" r="12" />
+      
+      <text class="water-label" x="15" y="22">1</text>
+      <text class="water-label" x="55" y="22">2</text>
+      <text class="water-label" x="95" y="22">3</text>
+      <text class="water-label" x="135" y="22">4</text>
+      <text class="water-label" x="175" y="22">5</text>
+      <text class="water-label" x="215" y="22">6</text>
+      <text class="water-label" x="255" y="22">7</text>
+      <text class="water-label" x="295" y="22">8</text>
+    </g>
+    
+    <text class="water-label" x="165" y="70" style="font-size:10px; fill:#7A8A7E;">目标：8杯水</text>
+  </g>
+
+  <!-- Mood Tracker -->
+  <g transform="translate(420, 450)">
+    <text class="section-title" x="0" y="0">MOOD · 心情记录</text>
+    <line class="section-line" x1="0" y1="8" x2="330" y2="8" />
+    
+    <g transform="translate(0, 32)">
+      <!-- 5 mood options -->
+      <circle class="mood-circle" cx="33" cy="0" r="24" />
+      <text class="mood-emoji" x="33" y="4">😊</text>
+      <text class="mood-label" x="33" y="32">开心</text>
+      
+      <circle class="mood-circle" cx="99" cy="0" r="24" />
+      <text class="mood-emoji" x="99" y="4">😌</text>
+      <text class="mood-label" x="99" y="32">平静</text>
+      
+      <circle class="mood-circle" cx="165" cy="0" r="24" />
+      <text class="mood-emoji" x="165" y="4">😐</text>
+      <text class="mood-label" x="165" y="32">一般</text>
+      
+      <circle class="mood-circle" cx="231" cy="0" r="24" />
+      <text class="mood-emoji" x="231" y="4">😔</text>
+      <text class="mood-label" x="231" y="32">低落</text>
+      
+      <circle class="mood-circle" cx="297" cy="0" r="24" />
+      <text class="mood-emoji" x="297" y="4">😤</text>
+      <text class="mood-label" x="297" y="32">烦躁</text>
+    </g>
+  </g>
+
+  <!-- Notes Section -->
+  <g transform="translate(420, 540)">
+    <text class="section-title" x="0" y="0">NOTES · 备忘录</text>
+    <line class="section-line" x1="0" y1="8" x2="330" y2="8" />
+    
+    <!-- Lined paper effect -->
+    <g transform="translate(0, 22)">
+      <line class="notes-line" x1="0" y1="0" x2="330" y2="0" />
+      <line class="notes-line" x1="0" y1="22" x2="330" y2="22" />
+      <line class="notes-line" x1="0" y1="44" x2="330" y2="44" />
+      <line class="notes-line" x1="0" y1="66" x2="330" y2="66" />
+      <line class="notes-line" x1="0" y1="88" x2="330" y2="88" />
+      <line class="notes-line" x1="0" y1="110" x2="330" y2="110" />
+      <line class="notes-line" x1="0" y1="132" x2="330" y2="132" />
+      <line class="notes-line" x1="0" y1="154" x2="330" y2="154" />
+      <line class="notes-line" x1="0" y1="176" x2="330" y2="176" />
+      <line class="notes-line" x1="0" y1="198" x2="330" y2="198" />
+      <line class="notes-line" x1="0" y1="220" x2="330" y2="220" />
+      <line class="notes-line" x1="0" y1="242" x2="330" y2="242" />
+      <line class="notes-line" x1="0" y1="264" x2="330" y2="264" />
+      <line class="notes-line" x1="0" y1="286" x2="330" y2="286" />
+      <line class="notes-line" x1="0" y1="308" x2="330" y2="308" />
+      <line class="notes-line" x1="0" y1="330" x2="330" y2="330" />
+      <line class="notes-line" x1="0" y1="352" x2="330" y2="352" />
+      <line class="notes-line" x1="0" y1="374" x2="330" y2="374" />
+      <line class="notes-line" x1="0" y1="396" x2="330" y2="396" />
+    </g>
+  </g>
+
+  <!-- Decorative line at bottom -->
+  <g transform="translate(400, 940)">
+    <line class="line-deco" x1="-120" y1="0" x2="120" y2="0" />
+    <circle class="dot-deco" cx="0" cy="0" r="2" />
+  </g>
+</svg>

@@ -1,0 +1,11 @@
+__pycache__/
+*.pyc
+.DS_Store
+dry_run_screenshots/
+config/goofish_cookies.json
+config/*.json
+generated_products/
+debug*.py
+error_*.png
+deploy.sh
+.env

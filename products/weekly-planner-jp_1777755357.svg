@@ -1,0 +1,232 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700;900&display=swap');
+      
+      * { margin: 0; padding: 0; box-sizing: border-box; }
+      
+      .bg { fill: #F5F0EB; }
+      .surface { fill: #EDE6DC; }
+      .foreground { fill: #3D3A36; }
+      .muted { fill: #A89F94; }
+      .border-color { fill: #D5CDC2; stroke: #D5CDC2; }
+      .accent { fill: #8B7355; }
+      .accent-stroke { stroke: #8B7355; }
+      .border-stroke { stroke: #D5CDC2; }
+      
+      .frame { fill: none; stroke: #8B7355; stroke-width: 1.5; }
+      .frame-inner { fill: none; stroke: #D5CDC2; stroke-width: 0.8; }
+      
+      .title-main { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 28px; font-weight: 900; fill: #3D3A36; letter-spacing: 3px; }
+      .title-sub { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 11px; font-weight: 300; fill: #A89F94; letter-spacing: 1.5px; }
+      .section-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 12px; font-weight: 500; fill: #8B7355; letter-spacing: 2px; }
+      .day-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 11px; font-weight: 500; fill: #3D3A36; }
+      .time-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 9px; font-weight: 300; fill: #A89F94; }
+      .time-half { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 7px; font-weight: 300; fill: #D5CDC2; }
+      .priority-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; fill: #3D3A36; }
+      .bucket-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; fill: #3D3A36; }
+      .notes-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; fill: #A89F94; }
+      
+      .grid-line { stroke: #D5CDC2; stroke-width: 0.5; stroke-opacity: 0.5; }
+      .grid-line-strong { stroke: #D5CDC2; stroke-width: 0.8; }
+      
+      .checkbox { fill: none; stroke: #A89F94; stroke-width: 1.2; }
+      .checkbox-checked { fill: #8B7355; stroke: #8B7355; stroke-width: 1.2; }
+      
+      .ink-line { fill: none; stroke: #3D3A36; stroke-width: 0.5; stroke-opacity: 0.15; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+  
+  <!-- Outer frame - ink wash style -->
+  <rect class="frame" x="12" y="12" width="776" height="976" rx="0" ry="0"/>
+  <rect class="frame-inner" x="16" y="16" width="768" height="968" rx="0" ry="0"/>
+  
+  <!-- Subtle ink wash texture marks -->
+  <line class="ink-line" x1="20" y1="20" x2="80" y2="20"/>
+  <line class="ink-line" x1="720" y1="980" x2="780" y2="980"/>
+  <line class="ink-line" x1="20" y1="980" x2="60" y2="980"/>
+  <line class="ink-line" x1="780" y1="20" x2="740" y2="20"/>
+
+  <!-- ===== HEADER SECTION ===== -->
+  <!-- Title area - asymmetrical placement -->
+  <text class="title-main" x="40" y="62">WEEKLY PLANNER</text>
+  <text class="title-sub" x="42" y="80">2025 · 春 · 第三周</text>
+  
+  <!-- Decorative accent line - only one -->
+  <line x1="40" y1="92" x2="180" y2="92" class="accent-stroke" stroke-width="2" stroke-opacity="0.6"/>
+
+  <!-- ===== TIME GRID SECTION ===== -->
+  <!-- Surface background for time grid -->
+  <rect class="surface" x="40" y="108" width="720" height="460" rx="0" ry="0" opacity="0.5"/>
+  
+  <!-- Day headers -->
+  <text class="day-label" x="100" y="130">周一</text>
+  <text class="day-label" x="200" y="130">周二</text>
+  <text class="day-label" x="300" y="130">周三</text>
+  <text class="day-label" x="400" y="130">周四</text>
+  <text class="day-label" x="500" y="130">周五</text>
+  <text class="day-label" x="600" y="130">周六</text>
+  <text class="day-label" x="700" y="130">周日</text>
+  
+  <!-- Vertical day separators -->
+  <line x1="95" y1="108" x2="95" y2="568" class="grid-line-strong"/>
+  <line x1="195" y1="108" x2="195" y2="568" class="grid-line-strong"/>
+  <line x1="295" y1="108" x2="295" y2="568" class="grid-line-strong"/>
+  <line x1="395" y1="108" x2="395" y2="568" class="grid-line-strong"/>
+  <line x1="495" y1="108" x2="495" y2="568" class="grid-line-strong"/>
+  <line x1="595" y1="108" x2="595" y2="568" class="grid-line-strong"/>
+  <line x1="695" y1="108" x2="695" y2="568" class="grid-line-strong"/>
+  
+  <!-- Horizontal time rows - 6AM to 10PM (32 half-hour slots) -->
+  <!-- Time labels and grid lines -->
+  <text class="time-label" x="48" y="150">6AM</text>
+  <line x1="95" y1="142" x2="760" y2="142" class="grid-line"/>
+  <text class="time-half" x="52" y="165">30</text>
+  <line x1="95" y1="157" x2="760" y2="157" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="184">7AM</text>
+  <line x1="95" y1="176" x2="760" y2="176" class="grid-line"/>
+  <text class="time-half" x="52" y="199">30</text>
+  <line x1="95" y1="191" x2="760" y2="191" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="218">8AM</text>
+  <line x1="95" y1="210" x2="760" y2="210" class="grid-line"/>
+  <text class="time-half" x="52" y="233">30</text>
+  <line x1="95" y1="225" x2="760" y2="225" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="252">9AM</text>
+  <line x1="95" y1="244" x2="760" y2="244" class="grid-line"/>
+  <text class="time-half" x="52" y="267">30</text>
+  <line x1="95" y1="259" x2="760" y2="259" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="286">10AM</text>
+  <line x1="95" y1="278" x2="760" y2="278" class="grid-line"/>
+  <text class="time-half" x="52" y="301">30</text>
+  <line x1="95" y1="293" x2="760" y2="293" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="320">11AM</text>
+  <line x1="95" y1="312" x2="760" y2="312" class="grid-line"/>
+  <text class="time-half" x="52" y="335">30</text>
+  <line x1="95" y1="327" x2="760" y2="327" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="354">12PM</text>
+  <line x1="95" y1="346" x2="760" y2="346" class="grid-line"/>
+  <text class="time-half" x="52" y="369">30</text>
+  <line x1="95" y1="361" x2="760" y2="361" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="388">1PM</text>
+  <line x1="95" y1="380" x2="760" y2="380" class="grid-line"/>
+  <text class="time-half" x="52" y="403">30</text>
+  <line x1="95" y1="395" x2="760" y2="395" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="422">2PM</text>
+  <line x1="95" y1="414" x2="760" y2="414" class="grid-line"/>
+  <text class="time-half" x="52" y="437">30</text>
+  <line x1="95" y1="429" x2="760" y2="429" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="456">3PM</text>
+  <line x1="95" y1="448" x2="760" y2="448" class="grid-line"/>
+  <text class="time-half" x="52" y="471">30</text>
+  <line x1="95" y1="463" x2="760" y2="463" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="490">4PM</text>
+  <line x1="95" y1="482" x2="760" y2="482" class="grid-line"/>
+  <text class="time-half" x="52" y="505">30</text>
+  <line x1="95" y1="497" x2="760" y2="497" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="524">5PM</text>
+  <line x1="95" y1="516" x2="760" y2="516" class="grid-line"/>
+  <text class="time-half" x="52" y="539">30</text>
+  <line x1="95" y1="531" x2="760" y2="531" class="grid-line" stroke-opacity="0.25"/>
+  
+  <text class="time-label" x="48" y="558">6PM</text>
+  <line x1="95" y1="550" x2="760" y2="550" class="grid-line"/>
+  <text class="time-half" x="52" y="573">30</text>
+  <line x1="95" y1="565" x2="760" y2="565" class="grid-line" stroke-opacity="0.25"/>
+  
+  <!-- 7PM-10PM abbreviated -->
+  <text class="time-label" x="48" y="592">7PM</text>
+  <line x1="95" y1="584" x2="760" y2="584" class="grid-line"/>
+  <text class="time-label" x="48" y="626">8PM</text>
+  <line x1="95" y1="618" x2="760" y2="618" class="grid-line"/>
+  <text class="time-label" x="48" y="660">9PM</text>
+  <line x1="95" y1="652" x2="760" y2="652" class="grid-line"/>
+  <text class="time-label" x="48" y="694">10PM</text>
+  <line x1="95" y1="686" x2="760" y2="686" class="grid-line"/>
+
+  <!-- ===== BOTTOM THREE-COLUMN SECTION ===== -->
+  <!-- Horizontal separator -->
+  <line x1="40" y1="710" x2="760" y2="710" class="border-stroke" stroke-width="0.8"/>
+  
+  <!-- Column dividers -->
+  <line x1="280" y1="710" x2="280" y2="960" class="border-stroke" stroke-width="0.5"/>
+  <line x1="540" y1="710" x2="540" y2="960" class="border-stroke" stroke-width="0.5"/>
+  
+  <!-- ===== PRIORITY COLUMN ===== -->
+  <text class="section-label" x="50" y="738">PRIORITY · 优先</text>
+  
+  <!-- Priority row 1 -->
+  <rect class="checkbox" x="52" y="752" width="12" height="12" rx="0" ry="0"/>
+  <text class="priority-text" x="72" y="762">完成项目提案初稿</text>
+  
+  <!-- Priority row 2 -->
+  <rect class="checkbox" x="52" y="778" width="12" height="12" rx="0" ry="0"/>
+  <text class="priority-text" x="72" y="788">健身训练 · 背部与核心</text>
+  
+  <!-- Priority row 3 -->
+  <rect class="checkbox-checked" x="52" y="804" width="12" height="12" rx="0" ry="0"/>
+  <line x1="56" y1="810" x2="60" y2="806" class="accent-stroke" stroke-width="1.5"/>
+  <line x1="60" y1="806" x2="64" y2="814" class="accent-stroke" stroke-width="1.5"/>
+  <text class="priority-text" x="72" y="814">采购周末食材</text>
+  
+  <!-- Priority row 4 -->
+  <rect class="checkbox" x="52" y="830" width="12" height="12" rx="0" ry="0"/>
+  <text class="priority-text" x="72" y="840">阅读《设计中的设计》</text>
+  
+  <!-- Priority row 5 -->
+  <rect class="checkbox" x="52" y="856" width="12" height="12" rx="0" ry="0"/>
+  <text class="priority-text" x="72" y="866">整理书房与工作台</text>
+
+  <!-- ===== BUCKET LIST COLUMN ===== -->
+  <text class="section-label" x="300" y="738">BUCKET LIST · 心愿</text>
+  
+  <!-- Bucket item 1 -->
+  <text class="bucket-text" x="300" y="762">去京都看秋天的红叶</text>
+  <line x1="300" y1="768" x2="520" y2="768" class="grid-line" stroke-opacity="0.3"/>
+  
+  <!-- Bucket item 2 -->
+  <text class="bucket-text" x="300" y="790">学会做完美的巴斯克蛋糕</text>
+  <line x1="300" y1="796" x2="520" y2="796" class="grid-line" stroke-opacity="0.3"/>
+  
+  <!-- Bucket item 3 -->
+  <text class="bucket-text" x="300" y="818">完成一次三日徒步旅行</text>
+  <line x1="300" y1="824" x2="520" y2="824" class="grid-line" stroke-opacity="0.3"/>
+
+  <!-- ===== NOTES COLUMN ===== -->
+  <text class="section-label" x="560" y="738">NOTES · 备忘</text>
+  
+  <!-- Notes lines -->
+  <line x1="560" y1="756" x2="740" y2="756" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="770" x2="740" y2="770" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="784" x2="740" y2="784" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="798" x2="740" y2="798" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="812" x2="740" y2="812" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="826" x2="740" y2="826" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="840" x2="740" y2="840" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="854" x2="740" y2="854" class="grid-line" stroke-opacity="0.3"/>
+  <line x1="560" y1="868" x2="740" y2="868" class="grid-line" stroke-opacity="0.3"/>
+  
+  <!-- Notes hint text -->
+  <text class="notes-text" x="560" y="890">写下你的想法与灵感...</text>
+  
+  <!-- ===== ACCENT DETAIL - single ceramic-like mark ===== -->
+  <circle cx="760" cy="50" r="3" fill="#8B7355" opacity="0.3"/>
+  <circle cx="755" cy="50" r="1.5" fill="#8B7355" opacity="0.15"/>
+  
+  <!-- Small accent stamp mark bottom right -->
+  <rect x="730" y="940" width="28" height="18" fill="none" stroke="#8B7355" stroke-width="0.8" opacity="0.4"/>
+  <text x="734" y="953" font-family="'Noto Sans SC', 'PingFang SC', sans-serif" font-size="7" fill="#8B7355" opacity="0.4" letter-spacing="1">侘寂</text>
+</svg>

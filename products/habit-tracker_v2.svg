@@ -1,0 +1,418 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; }
+      .bg { fill: #F4F1EA; }
+      .border { fill: none; stroke: #D5CDC2; stroke-width: 1.5; }
+      .grid-h { fill: none; stroke: #D5CDC2; stroke-width: 0.5; opacity: 0.4; }
+      .grid-v { fill: none; stroke: #D5CDC2; stroke-width: 0.5; opacity: 0.3; }
+      .title-main { fill: #3A3A35; font-size: 24px; font-weight: 600; letter-spacing: 2px; }
+      .title-sub { fill: #A8A095; font-size: 11px; letter-spacing: 3px; }
+      .label-text { fill: #3A3A35; font-size: 12px; font-weight: 500; letter-spacing: 0.5px; }
+      .day-num { fill: #A8A095; font-size: 8px; font-weight: 400; text-anchor: middle; }
+      .cell-dot { fill: none; stroke: #6B8E6B; stroke-width: 1.2; opacity: 0.5; }
+      .cell-fill { fill: #6B8E6B; opacity: 0.7; }
+      .cell-fill-light { fill: #6B8E6B; opacity: 0.35; }
+      .cell-fill-mid { fill: #6B8E6B; opacity: 0.55; }
+      .cell-fill-dark { fill: #6B8E6B; opacity: 0.85; }
+      .cell-empty { fill: #EAE5DA; opacity: 0.5; }
+      .stat-label { fill: #A8A095; font-size: 10px; letter-spacing: 1px; }
+      .stat-value { fill: #3A3A35; font-size: 18px; font-weight: 600; }
+      .stat-sub { fill: #6B8E6B; font-size: 11px; font-weight: 500; }
+      .divider { fill: none; stroke: #D5CDC2; stroke-width: 0.8; opacity: 0.6; }
+      .weekday { fill: #A8A095; font-size: 7px; text-anchor: middle; font-weight: 400; }
+      .accent-line { fill: #6B8E6B; opacity: 0.3; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+  
+  <!-- Outer border -->
+  <rect class="border" x="20" y="20" width="760" height="960" rx="4" ry="4"/>
+
+  <!-- Decorative accent line top left -->
+  <rect class="accent-line" x="20" y="20" width="4" height="960" rx="2"/>
+  <rect class="accent-line" x="20" y="20" width="760" height="3" rx="1.5"/>
+
+  <!-- Header Section -->
+  <text class="title-main" x="56" y="80">HABIT TRACKER</text>
+  <text class="title-sub" x="56" y="100">月度习惯追踪打卡表</text>
+
+  <!-- Decorative line under header -->
+  <line class="divider" x1="56" y1="112" x2="300" y2="112"/>
+
+  <!-- Month label -->
+  <text class="label-text" x="56" y="142" fill="#6B8E6B" font-size="13" letter-spacing="2">2025年4月</text>
+
+  <!-- Weekday headers -->
+  <text class="weekday" x="248" y="140">一</text>
+  <text class="weekday" x="273" y="140">二</text>
+  <text class="weekday" x="298" y="140">三</text>
+  <text class="weekday" x="323" y="140">四</text>
+  <text class="weekday" x="348" y="140">五</text>
+  <text class="weekday" x="373" y="140">六</text>
+  <text class="weekday" x="398" y="140">日</text>
+
+  <!-- Day numbers row -->
+  <g font-family="'PingFang SC','Microsoft YaHei','Hiragino Sans',sans-serif">
+    <!-- Day 1-31 labels -->
+    <text class="day-num" x="248" y="155">1</text>
+    <text class="day-num" x="273" y="155">2</text>
+    <text class="day-num" x="298" y="155">3</text>
+    <text class="day-num" x="323" y="155">4</text>
+    <text class="day-num" x="348" y="155">5</text>
+    <text class="day-num" x="373" y="155">6</text>
+    <text class="day-num" x="398" y="155">7</text>
+    <text class="day-num" x="423" y="155">8</text>
+    <text class="day-num" x="448" y="155">9</text>
+    <text class="day-num" x="473" y="155">10</text>
+    <text class="day-num" x="498" y="155">11</text>
+    <text class="day-num" x="523" y="155">12</text>
+    <text class="day-num" x="548" y="155">13</text>
+    <text class="day-num" x="573" y="155">14</text>
+    <text class="day-num" x="598" y="155">15</text>
+    <text class="day-num" x="623" y="155">16</text>
+    <text class="day-num" x="648" y="155">17</text>
+    <text class="day-num" x="673" y="155">18</text>
+    <text class="day-num" x="698" y="155">19</text>
+    <text class="day-num" x="723" y="155">20</text>
+    <text class="day-num" x="748" y="155">21</text>
+  </g>
+
+  <!-- Grid vertical lines for days -->
+  <g>
+    <line class="grid-v" x1="236" y1="160" x2="236" y2="860"/>
+    <line class="grid-v" x1="260" y1="160" x2="260" y2="860"/>
+    <line class="grid-v" x1="285" y1="160" x2="285" y2="860"/>
+    <line class="grid-v" x1="310" y1="160" x2="310" y2="860"/>
+    <line class="grid-v" x1="335" y1="160" x2="335" y2="860"/>
+    <line class="grid-v" x1="360" y1="160" x2="360" y2="860"/>
+    <line class="grid-v" x1="385" y1="160" x2="385" y2="860"/>
+    <line class="grid-v" x1="410" y1="160" x2="410" y2="860"/>
+    <line class="grid-v" x1="435" y1="160" x2="435" y2="860"/>
+    <line class="grid-v" x1="460" y1="160" x2="460" y2="860"/>
+    <line class="grid-v" x1="485" y1="160" x2="485" y2="860"/>
+    <line class="grid-v" x1="510" y1="160" x2="510" y2="860"/>
+    <line class="grid-v" x1="535" y1="160" x2="535" y2="860"/>
+    <line class="grid-v" x1="560" y1="160" x2="560" y2="860"/>
+    <line class="grid-v" x1="585" y1="160" x2="585" y2="860"/>
+    <line class="grid-v" x1="610" y1="160" x2="610" y2="860"/>
+    <line class="grid-v" x1="635" y1="160" x2="635" y2="860"/>
+    <line class="grid-v" x1="660" y1="160" x2="660" y2="860"/>
+    <line class="grid-v" x1="685" y1="160" x2="685" y2="860"/>
+    <line class="grid-v" x1="710" y1="160" x2="710" y2="860"/>
+    <line class="grid-v" x1="735" y1="160" x2="735" y2="860"/>
+    <line class="grid-v" x1="760" y1="160" x2="760" y2="860"/>
+  </g>
+
+  <!-- Horizontal grid lines for habits -->
+  <g>
+    <line class="grid-h" x1="56" y1="222" x2="760" y2="222"/>
+    <line class="grid-h" x1="56" y1="286" x2="760" y2="286"/>
+    <line class="grid-h" x1="56" y1="350" x2="760" y2="350"/>
+    <line class="grid-h" x1="56" y1="414" x2="760" y2="414"/>
+    <line class="grid-h" x1="56" y1="478" x2="760" y2="478"/>
+    <line class="grid-h" x1="56" y1="542" x2="760" y2="542"/>
+    <line class="grid-h" x1="56" y1="606" x2="760" y2="606"/>
+    <line class="grid-h" x1="56" y1="670" x2="760" y2="670"/>
+    <line class="grid-h" x1="56" y1="734" x2="760" y2="734"/>
+    <line class="grid-h" x1="56" y1="798" x2="760" y2="798"/>
+    <line class="grid-h" x1="56" y1="862" x2="760" y2="862"/>
+  </g>
+
+  <!-- Habits data: name, y-position, fill pattern -->
+  <!-- Each habit row has dots for 31 days, some filled, some empty -->
+  
+  <!-- 阅读 Reading -->
+  <text class="label-text" x="64" y="208">阅 读</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="206" r="6"/>
+    <circle class="cell-fill" cx="273" cy="206" r="6"/>
+    <circle class="cell-fill-light" cx="298" cy="206" r="6"/>
+    <circle class="cell-fill" cx="323" cy="206" r="6"/>
+    <circle class="cell-fill" cx="348" cy="206" r="6"/>
+    <circle class="cell-empty" cx="373" cy="206" r="6"/>
+    <circle class="cell-empty" cx="398" cy="206" r="6"/>
+    <circle class="cell-fill" cx="423" cy="206" r="6"/>
+    <circle class="cell-fill" cx="448" cy="206" r="6"/>
+    <circle class="cell-fill-light" cx="473" cy="206" r="6"/>
+    <circle class="cell-fill" cx="498" cy="206" r="6"/>
+    <circle class="cell-fill" cx="523" cy="206" r="6"/>
+    <circle class="cell-empty" cx="548" cy="206" r="6"/>
+    <circle class="cell-fill" cx="573" cy="206" r="6"/>
+    <circle class="cell-fill" cx="598" cy="206" r="6"/>
+    <circle class="cell-fill" cx="623" cy="206" r="6"/>
+    <circle class="cell-fill-light" cx="648" cy="206" r="6"/>
+    <circle class="cell-empty" cx="673" cy="206" r="6"/>
+    <circle class="cell-empty" cx="698" cy="206" r="6"/>
+    <circle class="cell-fill" cx="723" cy="206" r="6"/>
+    <circle class="cell-fill" cx="748" cy="206" r="6"/>
+  </g>
+
+  <!-- 运动 Exercise -->
+  <text class="label-text" x="64" y="272">运 动</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="270" r="6"/>
+    <circle class="cell-empty" cx="273" cy="270" r="6"/>
+    <circle class="cell-fill" cx="298" cy="270" r="6"/>
+    <circle class="cell-fill" cx="323" cy="270" r="6"/>
+    <circle class="cell-fill-light" cx="348" cy="270" r="6"/>
+    <circle class="cell-empty" cx="373" cy="270" r="6"/>
+    <circle class="cell-fill" cx="398" cy="270" r="6"/>
+    <circle class="cell-fill" cx="423" cy="270" r="6"/>
+    <circle class="cell-empty" cx="448" cy="270" r="6"/>
+    <circle class="cell-fill" cx="473" cy="270" r="6"/>
+    <circle class="cell-fill" cx="498" cy="270" r="6"/>
+    <circle class="cell-fill-light" cx="523" cy="270" r="6"/>
+    <circle class="cell-fill" cx="548" cy="270" r="6"/>
+    <circle class="cell-empty" cx="573" cy="270" r="6"/>
+    <circle class="cell-fill" cx="598" cy="270" r="6"/>
+    <circle class="cell-fill" cx="623" cy="270" r="6"/>
+    <circle class="cell-empty" cx="648" cy="270" r="6"/>
+    <circle class="cell-fill" cx="673" cy="270" r="6"/>
+    <circle class="cell-fill" cx="698" cy="270" r="6"/>
+    <circle class="cell-fill-light" cx="723" cy="270" r="6"/>
+    <circle class="cell-empty" cx="748" cy="270" r="6"/>
+  </g>
+
+  <!-- 早起 Early Rise -->
+  <text class="label-text" x="64" y="336">早 起</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="334" r="6"/>
+    <circle class="cell-fill" cx="273" cy="334" r="6"/>
+    <circle class="cell-fill" cx="298" cy="334" r="6"/>
+    <circle class="cell-fill-light" cx="323" cy="334" r="6"/>
+    <circle class="cell-empty" cx="348" cy="334" r="6"/>
+    <circle class="cell-fill" cx="373" cy="334" r="6"/>
+    <circle class="cell-fill" cx="398" cy="334" r="6"/>
+    <circle class="cell-fill" cx="423" cy="334" r="6"/>
+    <circle class="cell-fill" cx="448" cy="334" r="6"/>
+    <circle class="cell-empty" cx="473" cy="334" r="6"/>
+    <circle class="cell-fill" cx="498" cy="334" r="6"/>
+    <circle class="cell-fill-light" cx="523" cy="334" r="6"/>
+    <circle class="cell-fill" cx="548" cy="334" r="6"/>
+    <circle class="cell-fill" cx="573" cy="334" r="6"/>
+    <circle class="cell-empty" cx="598" cy="334" r="6"/>
+    <circle class="cell-fill" cx="623" cy="334" r="6"/>
+    <circle class="cell-fill" cx="648" cy="334" r="6"/>
+    <circle class="cell-fill-light" cx="673" cy="334" r="6"/>
+    <circle class="cell-empty" cx="698" cy="334" r="6"/>
+    <circle class="cell-fill" cx="723" cy="334" r="6"/>
+    <circle class="cell-fill" cx="748" cy="334" r="6"/>
+  </g>
+
+  <!-- 冥想 Meditation -->
+  <text class="label-text" x="64" y="400">冥 想</text>
+  <g>
+    <circle class="cell-empty" cx="248" cy="398" r="6"/>
+    <circle class="cell-fill-light" cx="273" cy="398" r="6"/>
+    <circle class="cell-fill" cx="298" cy="398" r="6"/>
+    <circle class="cell-empty" cx="323" cy="398" r="6"/>
+    <circle class="cell-fill" cx="348" cy="398" r="6"/>
+    <circle class="cell-fill" cx="373" cy="398" r="6"/>
+    <circle class="cell-fill-light" cx="398" cy="398" r="6"/>
+    <circle class="cell-empty" cx="423" cy="398" r="6"/>
+    <circle class="cell-fill" cx="448" cy="398" r="6"/>
+    <circle class="cell-fill" cx="473" cy="398" r="6"/>
+    <circle class="cell-empty" cx="498" cy="398" r="6"/>
+    <circle class="cell-fill-light" cx="523" cy="398" r="6"/>
+    <circle class="cell-fill" cx="548" cy="398" r="6"/>
+    <circle class="cell-empty" cx="573" cy="398" r="6"/>
+    <circle class="cell-fill" cx="598" cy="398" r="6"/>
+    <circle class="cell-fill" cx="623" cy="398" r="6"/>
+    <circle class="cell-fill-light" cx="648" cy="398" r="6"/>
+    <circle class="cell-empty" cx="673" cy="398" r="6"/>
+    <circle class="cell-fill" cx="698" cy="398" r="6"/>
+    <circle class="cell-fill" cx="723" cy="398" r="6"/>
+    <circle class="cell-empty" cx="748" cy="398" r="6"/>
+  </g>
+
+  <!-- 写作 Writing -->
+  <text class="label-text" x="64" y="464">写 作</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="462" r="6"/>
+    <circle class="cell-fill" cx="273" cy="462" r="6"/>
+    <circle class="cell-empty" cx="298" cy="462" r="6"/>
+    <circle class="cell-fill-light" cx="323" cy="462" r="6"/>
+    <circle class="cell-fill" cx="348" cy="462" r="6"/>
+    <circle class="cell-empty" cx="373" cy="462" r="6"/>
+    <circle class="cell-fill" cx="398" cy="462" r="6"/>
+    <circle class="cell-fill" cx="423" cy="462" r="6"/>
+    <circle class="cell-fill-light" cx="448" cy="462" r="6"/>
+    <circle class="cell-empty" cx="473" cy="462" r="6"/>
+    <circle class="cell-fill" cx="498" cy="462" r="6"/>
+    <circle class="cell-fill" cx="523" cy="462" r="6"/>
+    <circle class="cell-empty" cx="548" cy="462" r="6"/>
+    <circle class="cell-fill" cx="573" cy="462" r="6"/>
+    <circle class="cell-fill-light" cx="598" cy="462" r="6"/>
+    <circle class="cell-empty" cx="623" cy="462" r="6"/>
+    <circle class="cell-fill" cx="648" cy="462" r="6"/>
+    <circle class="cell-fill" cx="673" cy="462" r="6"/>
+    <circle class="cell-fill" cx="698" cy="462" r="6"/>
+    <circle class="cell-empty" cx="723" cy="462" r="6"/>
+    <circle class="cell-fill-light" cx="748" cy="462" r="6"/>
+  </g>
+
+  <!-- 饮水 Hydration -->
+  <text class="label-text" x="64" y="528">饮 水</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="526" r="6"/>
+    <circle class="cell-fill" cx="273" cy="526" r="6"/>
+    <circle class="cell-fill" cx="298" cy="526" r="6"/>
+    <circle class="cell-fill" cx="323" cy="526" r="6"/>
+    <circle class="cell-fill-light" cx="348" cy="526" r="6"/>
+    <circle class="cell-fill" cx="373" cy="526" r="6"/>
+    <circle class="cell-fill" cx="398" cy="526" r="6"/>
+    <circle class="cell-fill" cx="423" cy="526" r="6"/>
+    <circle class="cell-fill" cx="448" cy="526" r="6"/>
+    <circle class="cell-fill-light" cx="473" cy="526" r="6"/>
+    <circle class="cell-fill" cx="498" cy="526" r="6"/>
+    <circle class="cell-fill" cx="523" cy="526" r="6"/>
+    <circle class="cell-fill" cx="548" cy="526" r="6"/>
+    <circle class="cell-fill" cx="573" cy="526" r="6"/>
+    <circle class="cell-fill-light" cx="598" cy="526" r="6"/>
+    <circle class="cell-fill" cx="623" cy="526" r="6"/>
+    <circle class="cell-fill" cx="648" cy="526" r="6"/>
+    <circle class="cell-fill" cx="673" cy="526" r="6"/>
+    <circle class="cell-fill" cx="698" cy="526" r="6"/>
+    <circle class="cell-fill-light" cx="723" cy="526" r="6"/>
+    <circle class="cell-fill" cx="748" cy="526" r="6"/>
+  </g>
+
+  <!-- 学习 Study -->
+  <text class="label-text" x="64" y="592">学 习</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="590" r="6"/>
+    <circle class="cell-fill" cx="273" cy="590" r="6"/>
+    <circle class="cell-fill-light" cx="298" cy="590" r="6"/>
+    <circle class="cell-empty" cx="323" cy="590" r="6"/>
+    <circle class="cell-fill" cx="348" cy="590" r="6"/>
+    <circle class="cell-fill" cx="373" cy="590" r="6"/>
+    <circle class="cell-fill" cx="398" cy="590" r="6"/>
+    <circle class="cell-fill-light" cx="423" cy="590" r="6"/>
+    <circle class="cell-empty" cx="448" cy="590" r="6"/>
+    <circle class="cell-fill" cx="473" cy="590" r="6"/>
+    <circle class="cell-fill" cx="498" cy="590" r="6"/>
+    <circle class="cell-fill" cx="523" cy="590" r="6"/>
+    <circle class="cell-fill-light" cx="548" cy="590" r="6"/>
+    <circle class="cell-empty" cx="573" cy="590" r="6"/>
+    <circle class="cell-fill" cx="598" cy="590" r="6"/>
+    <circle class="cell-fill" cx="623" cy="590" r="6"/>
+    <circle class="cell-empty" cx="648" cy="590" r="6"/>
+    <circle class="cell-fill" cx="673" cy="590" r="6"/>
+    <circle class="cell-fill-light" cx="698" cy="590" r="6"/>
+    <circle class="cell-fill" cx="723" cy="590" r="6"/>
+    <circle class="cell-empty" cx="748" cy="590" r="6"/>
+  </g>
+
+  <!-- 记账 Accounting -->
+  <text class="label-text" x="64" y="656">记 账</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="654" r="6"/>
+    <circle class="cell-empty" cx="273" cy="654" r="6"/>
+    <circle class="cell-fill" cx="298" cy="654" r="6"/>
+    <circle class="cell-fill" cx="323" cy="654" r="6"/>
+    <circle class="cell-fill-light" cx="348" cy="654" r="6"/>
+    <circle class="cell-empty" cx="373" cy="654" r="6"/>
+    <circle class="cell-fill" cx="398" cy="654" r="6"/>
+    <circle class="cell-fill" cx="423" cy="654" r="6"/>
+    <circle class="cell-fill" cx="448" cy="654" r="6"/>
+    <circle class="cell-fill-light" cx="473" cy="654" r="6"/>
+    <circle class="cell-empty" cx="498" cy="654" r="6"/>
+    <circle class="cell-fill" cx="523" cy="654" r="6"/>
+    <circle class="cell-fill" cx="548" cy="654" r="6"/>
+    <circle class="cell-empty" cx="573" cy="654" r="6"/>
+    <circle class="cell-fill" cx="598" cy="654" r="6"/>
+    <circle class="cell-fill-light" cx="623" cy="654" r="6"/>
+    <circle class="cell-fill" cx="648" cy="654" r="6"/>
+    <circle class="cell-empty" cx="673" cy="654" r="6"/>
+    <circle class="cell-fill" cx="698" cy="654" r="6"/>
+    <circle class="cell-fill" cx="723" cy="654" r="6"/>
+    <circle class="cell-fill-light" cx="748" cy="654" r="6"/>
+  </g>
+
+  <!-- 清淡饮食 Light Diet -->
+  <text class="label-text" x="64" y="720">清淡饮食</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="718" r="6"/>
+    <circle class="cell-fill" cx="273" cy="718" r="6"/>
+    <circle class="cell-fill-light" cx="298" cy="718" r="6"/>
+    <circle class="cell-fill" cx="323" cy="718" r="6"/>
+    <circle class="cell-fill" cx="348" cy="718" r="6"/>
+    <circle class="cell-fill" cx="373" cy="718" r="6"/>
+    <circle class="cell-empty" cx="398" cy="718" r="6"/>
+    <circle class="cell-fill" cx="423" cy="718" r="6"/>
+    <circle class="cell-fill-light" cx="448" cy="718" r="6"/>
+    <circle class="cell-fill" cx="473" cy="718" r="6"/>
+    <circle class="cell-empty" cx="498" cy="718" r="6"/>
+    <circle class="cell-fill" cx="523" cy="718" r="6"/>
+    <circle class="cell-fill" cx="548" cy="718" r="6"/>
+    <circle class="cell-fill-light" cx="573" cy="718" r="6"/>
+    <circle class="cell-fill" cx="598" cy="718" r="6"/>
+    <circle class="cell-empty" cx="623" cy="718" r="6"/>
+    <circle class="cell-fill" cx="648" cy="718" r="6"/>
+    <circle class="cell-fill" cx="673" cy="718" r="6"/>
+    <circle class="cell-fill-light" cx="698" cy="718" r="6"/>
+    <circle class="cell-empty" cx="723" cy="718" r="6"/>
+    <circle class="cell-fill" cx="748" cy="718" r="6"/>
+  </g>
+
+  <!-- 早睡 Early Sleep -->
+  <text class="label-text" x="64" y="784">早 睡</text>
+  <g>
+    <circle class="cell-fill" cx="248" cy="782" r="6"/>
+    <circle class="cell-fill" cx="273" cy="782" r="6"/>
+    <circle class="cell-fill" cx="298" cy="782" r="6"/>
+    <circle class="cell-fill-light" cx="323" cy="782" r="6"/>
+    <circle class="cell-empty" cx="348" cy="782" r="6"/>
+    <circle class="cell-fill" cx="373" cy="782" r="6"/>
+    <circle class="cell-fill" cx="398" cy="782" r="6"/>
+    <circle class="cell-fill" cx="423" cy="782" r="6"/>
+    <circle class="cell-empty" cx="448" cy="782" r="6"/>
+    <circle class="cell-fill" cx="473" cy="782" r="6"/>
+    <circle class="cell-fill-light" cx="498" cy="782" r="6"/>
+    <circle class="cell-fill" cx="523" cy="782" r="6"/>
+    <circle class="cell-empty" cx="548" cy="782" r="6"/>
+    <circle class="cell-fill" cx="573" cy="782" r="6"/>
+    <circle class="cell-fill" cx="598" cy="782" r="6"/>
+    <circle class="cell-fill-light" cx="623" cy="782" r="6"/>
+    <circle class="cell-empty" cx="648" cy="782" r="6"/>
+    <circle class="cell-fill" cx="673" cy="782" r="6"/>
+    <circle class="cell-fill" cx="698" cy="782" r="6"/>
+    <circle class="cell-fill" cx="723" cy="782" r="6"/>
+    <circle class="cell-fill-light" cx="748" cy="782" r="6"/>
+  </g>
+
+  <!-- Divider before stats -->
+  <line class="divider" x1="56" y1="880" x2="744" y2="880"/>
+
+  <!-- Stats Section -->
+  <g>
+    <!-- 完成率 Completion Rate -->
+    <text class="stat-label" x="80" y="912">完成率</text>
+    <text class="stat-value" x="80" y="940">73</text>
+    <text class="stat-label" x="110" y="940" font-size="14">%</text>
+
+    <!-- 连续打卡天数 Streak -->
+    <text class="stat-label" x="250" y="912">连续打卡</text>
+    <text class="stat-value" x="250" y="940">12</text>
+    <text class="stat-label" x="310" y="940" font-size="14">天</text>
+
+    <!-- 最佳习惯 Best Habit -->
+    <text class="stat-label" x="460" y="912">最佳习惯</text>
+    <text class="stat-sub" x="460" y="940">饮 水</text>
+
+    <!-- 总打卡 Total Check-ins -->
+    <text class="stat-label" x="620" y="912">总打卡</text>
+    <text class="stat-value" x="620" y="940">226</text>
+    <text class="stat-label" x="680" y="940" font-size="14">次</text>
+  </g>
+
+  <!-- Small decorative element - subtle sage dot -->
+  <circle cx="744" cy="96" r="3" fill="#6B8E6B" opacity="0.25"/>
+
+  <!-- Bottom right subtle mark -->
+  <text x="744" y="960" text-anchor="end" fill="#D5CDC2" font-size="8" letter-spacing="1" opacity="0.6">HABIT TRACKER · 四月</text>
+
+</svg>

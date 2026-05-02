@@ -1,0 +1,218 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { box-sizing: border-box; }
+      body { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; margin: 0; padding: 0; }
+      .bg { fill: #F5F0EB; }
+      .border { fill: none; stroke: #C4B8A8; stroke-width: 2; }
+      .title-main { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 28px; font-weight: 700; fill: #3D3A36; letter-spacing: 4px; }
+      .title-sub { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 11px; fill: #A89F94; letter-spacing: 2px; font-weight: 300; }
+      .section-title { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 12px; font-weight: 600; fill: #6B6258; letter-spacing: 1px; }
+      .day-label { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; font-weight: 500; fill: #6B6258; text-anchor: middle; }
+      .time-label { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 8px; fill: #A89F94; text-anchor: end; }
+      .grid-line { stroke: #E3DDD5; stroke-width: 0.5; }
+      .grid-line-bold { stroke: #D5CDC2; stroke-width: 1; }
+      .deco-dot { fill: #D5CDC2; }
+      .deco-line { stroke: #D5CDC2; stroke-width: 0.5; }
+      .priority-box { fill: #F0EBE4; stroke: #D5CDC2; stroke-width: 0.8; rx: 3; }
+      .bucket-box { fill: #F0EBE4; stroke: #D5CDC2; stroke-width: 0.8; rx: 3; }
+      .notes-box { fill: #F0EBE4; stroke: #D5CDC2; stroke-width: 0.8; rx: 3; }
+      .checkbox { fill: none; stroke: #B8ADA0; stroke-width: 1.2; rx: 1.5; }
+      .text-small { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 8px; fill: #B8ADA0; }
+      .accent-line { stroke: #C9B6A2; stroke-width: 1.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" x="0" y="0" width="800" height="1000" />
+
+  <!-- Border -->
+  <rect class="border" x="20" y="20" width="760" height="960" rx="4" />
+
+  <!-- Decorative top line -->
+  <line class="accent-line" x1="40" y1="52" x2="200" y2="52" />
+
+  <!-- Title -->
+  <text class="title-main" x="400" y="88" text-anchor="middle">WEEKLY PLANNER</text>
+  <text class="title-sub" x="400" y="108" text-anchor="middle">每 周 计 划 表</text>
+
+  <!-- Decorative dots -->
+  <circle class="deco-dot" cx="370" cy="96" r="1.5" />
+  <circle class="deco-dot" cx="430" cy="96" r="1.5" />
+
+  <!-- Divider -->
+  <line class="grid-line-bold" x1="40" y1="125" x2="760" y2="125" />
+
+  <!-- ===== TIME GRID SECTION ===== -->
+  <!-- Section title -->
+  <text class="section-title" x="45" y="148">时间轴 · TIME</text>
+
+  <!-- Day headers -->
+  <text class="day-label" x="155" y="148">周一</text>
+  <text class="day-label" x="250" y="148">周二</text>
+  <text class="day-label" x="345" y="148">周三</text>
+  <text class="day-label" x="440" y="148">周四</text>
+  <text class="day-label" x="535" y="148">周五</text>
+  <text class="day-label" x="630" y="148">周六</text>
+  <text class="day-label" x="725" y="148">周日</text>
+
+  <!-- Column vertical lines -->
+  <line class="grid-line" x1="105" y1="155" x2="105" y2="530" />
+  <line class="grid-line" x1="200" y1="155" x2="200" y2="530" />
+  <line class="grid-line" x1="295" y1="155" x2="295" y2="530" />
+  <line class="grid-line" x1="390" y1="155" x2="390" y2="530" />
+  <line class="grid-line" x1="485" y1="155" x2="485" y2="530" />
+  <line class="grid-line" x1="580" y1="155" x2="580" y2="530" />
+  <line class="grid-line" x1="675" y1="155" x2="675" y2="530" />
+  <line class="grid-line-bold" x1="770" y1="155" x2="770" y2="530" />
+
+  <!-- Time rows: 6AM to 10PM = 16 hours -->
+  <!-- Row height: (530-155)/16 = ~23.44px -->
+  <!-- 6AM = 0, 7AM = 1, ..., 10PM = 16 -->
+
+  <!-- Time labels and horizontal lines -->
+  <!-- 6AM -->
+  <text class="time-label" x="98" y="160">6AM</text>
+  <line class="grid-line" x1="105" y1="162" x2="770" y2="162" />
+  <!-- 7AM -->
+  <text class="time-label" x="98" y="184">7AM</text>
+  <line class="grid-line" x1="105" y1="186" x2="770" y2="186" />
+  <!-- 8AM -->
+  <text class="time-label" x="98" y="208">8AM</text>
+  <line class="grid-line" x1="105" y1="210" x2="770" y2="210" />
+  <!-- 9AM -->
+  <text class="time-label" x="98" y="232">9AM</text>
+  <line class="grid-line" x1="105" y1="234" x2="770" y2="234" />
+  <!-- 10AM -->
+  <text class="time-label" x="98" y="256">10AM</text>
+  <line class="grid-line" x1="105" y1="258" x2="770" y2="258" />
+  <!-- 11AM -->
+  <text class="time-label" x="98" y="280">11AM</text>
+  <line class="grid-line" x1="105" y1="282" x2="770" y2="282" />
+  <!-- 12PM -->
+  <text class="time-label" x="98" y="304">12PM</text>
+  <line class="grid-line" x1="105" y1="306" x2="770" y2="306" />
+  <!-- 1PM -->
+  <text class="time-label" x="98" y="328">1PM</text>
+  <line class="grid-line" x1="105" y1="330" x2="770" y2="330" />
+  <!-- 2PM -->
+  <text class="time-label" x="98" y="352">2PM</text>
+  <line class="grid-line" x1="105" y1="354" x2="770" y2="354" />
+  <!-- 3PM -->
+  <text class="time-label" x="98" y="376">3PM</text>
+  <line class="grid-line" x1="105" y1="378" x2="770" y2="378" />
+  <!-- 4PM -->
+  <text class="time-label" x="98" y="400">4PM</text>
+  <line class="grid-line" x1="105" y1="402" x2="770" y2="402" />
+  <!-- 5PM -->
+  <text class="time-label" x="98" y="424">5PM</text>
+  <line class="grid-line" x1="105" y1="426" x2="770" y2="426" />
+  <!-- 6PM -->
+  <text class="time-label" x="98" y="448">6PM</text>
+  <line class="grid-line" x1="105" y1="450" x2="770" y2="450" />
+  <!-- 7PM -->
+  <text class="time-label" x="98" y="472">7PM</text>
+  <line class="grid-line" x1="105" y1="474" x2="770" y2="474" />
+  <!-- 8PM -->
+  <text class="time-label" x="98" y="496">8PM</text>
+  <line class="grid-line" x1="105" y1="498" x2="770" y2="498" />
+  <!-- 9PM -->
+  <text class="time-label" x="98" y="520">9PM</text>
+  <line class="grid-line" x1="105" y1="522" x2="770" y2="522" />
+  <!-- 10PM -->
+  <text class="time-label" x="98" y="542">10PM</text>
+  <line class="grid-line-bold" x1="105" y1="545" x2="770" y2="545" />
+
+  <!-- Bottom border of time grid -->
+  <line class="grid-line-bold" x1="40" y1="545" x2="770" y2="545" />
+
+  <!-- ===== BOTTOM SECTIONS ===== -->
+
+  <!-- Divider -->
+  <line class="grid-line-bold" x1="40" y1="560" x2="760" y2="560" />
+
+  <!-- PRIORITY Section -->
+  <text class="section-title" x="45" y="585">优先级 · PRIORITY</text>
+
+  <!-- Priority box -->
+  <rect class="priority-box" x="45" y="598" width="340" height="160" />
+
+  <!-- Priority items -->
+  <rect class="checkbox" x="60" y="614" width="12" height="12" />
+  <text class="text-small" x="80" y="624" fill="#6B6258">重要且紧急</text>
+
+  <rect class="checkbox" x="60" y="640" width="12" height="12" />
+  <text class="text-small" x="80" y="650" fill="#6B6258">重要不紧急</text>
+
+  <rect class="checkbox" x="60" y="666" width="12" height="12" />
+  <text class="text-small" x="80" y="676" fill="#6B6258">紧急不重要</text>
+
+  <rect class="checkbox" x="60" y="692" width="12" height="12" />
+  <text class="text-small" x="80" y="702" fill="#6B6258">不重要不紧急</text>
+
+  <!-- Priority lines for writing -->
+  <line class="deco-line" x1="60" y1="730" x2="370" y2="730" />
+  <line class="deco-line" x1="60" y1="745" x2="370" y2="745" />
+
+  <!-- BUCKET LIST Section -->
+  <text class="section-title" x="415" y="585">愿望清单 · BUCKET LIST</text>
+
+  <rect class="bucket-box" x="415" y="598" width="340" height="160" />
+
+  <!-- Bucket list items -->
+  <rect class="checkbox" x="430" y="614" width="12" height="12" />
+  <text class="text-small" x="450" y="624" fill="#B8ADA0">___________________</text>
+
+  <rect class="checkbox" x="430" y="640" width="12" height="12" />
+  <text class="text-small" x="450" y="650" fill="#B8ADA0">___________________</text>
+
+  <rect class="checkbox" x="430" y="666" width="12" height="12" />
+  <text class="text-small" x="450" y="676" fill="#B8ADA0">___________________</text>
+
+  <rect class="checkbox" x="430" y="692" width="12" height="12" />
+  <text class="text-small" x="450" y="702" fill="#B8ADA0">___________________</text>
+
+  <!-- Bucket list lines -->
+  <line class="deco-line" x1="430" y1="730" x2="740" y2="730" />
+  <line class="deco-line" x1="430" y1="745" x2="740" y2="745" />
+
+  <!-- Divider -->
+  <line class="grid-line-bold" x1="40" y1="775" x2="760" y2="775" />
+
+  <!-- NOTES Section -->
+  <text class="section-title" x="45" y="800">备忘录 · NOTES</text>
+
+  <rect class="notes-box" x="45" y="813" width="710" height="145" />
+
+  <!-- Notes lines -->
+  <line class="deco-line" x1="60" y1="840" x2="740" y2="840" />
+  <line class="deco-line" x1="60" y1="862" x2="740" y2="862" />
+  <line class="deco-line" x1="60" y1="884" x2="740" y2="884" />
+  <line class="deco-line" x1="60" y1="906" x2="740" y2="906" />
+  <line class="deco-line" x1="60" y1="928" x2="740" y2="928" />
+  <line class="deco-line" x1="60" y1="950" x2="740" y2="950" />
+
+  <!-- Decorative corner elements -->
+  <path d="M 30 30 L 30 45" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 30 30 L 45 30" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 770 30 L 770 45" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 770 30 L 755 30" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 30 970 L 30 955" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 30 970 L 45 970" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 770 970 L 770 955" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+  <path d="M 770 970 L 755 970" stroke="#C4B8A8" stroke-width="1.5" fill="none" />
+
+  <!-- Small decorative leaf motifs -->
+  <g transform="translate(380, 560)" opacity="0.4">
+    <path d="M 0 0 C 3 -4 8 -4 10 0 C 8 4 3 4 0 0 Z" fill="#C9B6A2" />
+    <line x1="5" y1="0" x2="5" y2="5" stroke="#C9B6A2" stroke-width="0.5" />
+  </g>
+
+  <g transform="translate(420, 560)" opacity="0.4">
+    <path d="M 0 0 C -3 -4 -8 -4 -10 0 C -8 4 -3 4 0 0 Z" fill="#C9B6A2" />
+    <line x1="-5" y1="0" x2="-5" y2="5" stroke="#C9B6A2" stroke-width="0.5" />
+  </g>
+
+  <!-- Footer text -->
+  <text class="text-small" x="400" y="985" text-anchor="middle" fill="#C4B8A8" font-size="7">— 每 周 规 划 · 从 容 生 活 —</text>
+</svg>

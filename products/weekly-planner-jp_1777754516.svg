@@ -1,0 +1,247 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;600;700&family=Inter:wght@300;400;500;600&display=swap');
+      
+      * { box-sizing: border-box; }
+      
+      .bg { fill: #F7F5F0; }
+      .border { fill: none; stroke: #D4C9B8; stroke-width: 1.5; }
+      .border-inner { fill: none; stroke: #E0D8CC; stroke-width: 0.8; }
+      .divider { stroke: #E8E2D6; stroke-width: 0.6; }
+      .divider-strong { stroke: #D4C9B8; stroke-width: 0.8; }
+      
+      .title-main { font-family: 'Inter', sans-serif; font-size: 28px; font-weight: 500; fill: #3A3226; letter-spacing: 3px; }
+      .title-sub { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 11px; font-weight: 300; fill: #A09888; letter-spacing: 2px; }
+      .section-title { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 12px; font-weight: 500; fill: #5A5245; letter-spacing: 1.5px; }
+      .section-title-en { font-family: 'Inter', sans-serif; font-size: 8px; font-weight: 400; fill: #B0A898; letter-spacing: 1px; }
+      
+      .day-label { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 10px; font-weight: 500; fill: #5A5245; text-anchor: middle; }
+      .day-label-en { font-family: 'Inter', sans-serif; font-size: 7px; font-weight: 400; fill: #B0A898; text-anchor: middle; }
+      .time-label { font-family: 'Inter', sans-serif; font-size: 7px; font-weight: 300; fill: #A09888; text-anchor: end; }
+      
+      .hour-line { stroke: #EDE8E0; stroke-width: 0.5; }
+      .half-hour-line { stroke: #F0ECE6; stroke-width: 0.3; stroke-dasharray: 2,3; }
+      .day-divider { stroke: #E0D8CC; stroke-width: 0.6; }
+      
+      .priority-dot { fill: #C4B8A8; }
+      .priority-text { font-family: 'Noto Sans SC', 'PingFang SC', 'Microsoft YaHei', sans-serif; font-size: 9px; fill: #6A6255; }
+      
+      .note-line { stroke: #E8E2D6; stroke-width: 0.5; }
+      
+      .deco-circle { fill: none; stroke: #DCD4C6; stroke-width: 0.5; }
+      .deco-dot { fill: #DCD4C6; }
+      
+      .footer-text { font-family: 'Inter', sans-serif; font-size: 6px; fill: #C8C0B2; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+
+  <!-- Outer border -->
+  <rect class="border" x="18" y="18" width="764" height="964" rx="2" ry="2"/>
+  
+  <!-- Inner border -->
+  <rect class="border-inner" x="24" y="24" width="752" height="952" rx="1" ry="1"/>
+
+  <!-- Decorative corner elements -->
+  <circle class="deco-circle" cx="38" cy="38" r="6"/>
+  <circle class="deco-dot" cx="38" cy="38" r="1.5"/>
+  <circle class="deco-circle" cx="762" cy="38" r="6"/>
+  <circle class="deco-dot" cx="762" cy="38" r="1.5"/>
+  <circle class="deco-circle" cx="38" cy="962" r="6"/>
+  <circle class="deco-dot" cx="38" cy="962" r="1.5"/>
+  <circle class="deco-circle" cx="762" cy="962" r="6"/>
+  <circle class="deco-dot" cx="762" cy="962" r="1.5"/>
+
+  <!-- Title Section -->
+  <text class="title-main" x="400" y="72" text-anchor="middle">WEEKLY PLANNER</text>
+  <text class="title-sub" x="400" y="92" text-anchor="middle">— 每周计划表 —</text>
+  
+  <line class="divider-strong" x1="300" y1="104" x2="500" y2="104"/>
+
+  <!-- Date row -->
+  <text class="day-label" x="400" y="130">2025年 3月 17日 — 3月 23日</text>
+  <text class="day-label-en" x="400" y="144">MON 17 — SUN 23 MAR</text>
+
+  <!-- Day columns header -->
+  <!-- x positions for 7 days: 120, 208, 296, 384, 472, 560, 648 -->
+  <!-- width of each column: 76 -->
+  <!-- time column width: 80, starts at x=32 -->
+  
+  <line class="divider-strong" x1="112" y1="120" x2="112" y2="940"/>
+  
+  <!-- Day labels -->
+  <text class="day-label" x="154" y="170">一</text>
+  <text class="day-label-en" x="154" y="182">MON</text>
+  
+  <text class="day-label" x="242" y="170">二</text>
+  <text class="day-label-en" x="242" y="182">TUE</text>
+  
+  <text class="day-label" x="330" y="170">三</text>
+  <text class="day-label-en" x="330" y="182">WED</text>
+  
+  <text class="day-label" x="418" y="170">四</text>
+  <text class="day-label-en" x="418" y="182">THU</text>
+  
+  <text class="day-label" x="506" y="170">五</text>
+  <text class="day-label-en" x="506" y="182">FRI</text>
+  
+  <text class="day-label" x="594" y="170">六</text>
+  <text class="day-label-en" x="594" y="182">SAT</text>
+  
+  <text class="day-label" x="682" y="170">日</text>
+  <text class="day-label-en" x="682" y="182">SUN</text>
+
+  <line class="divider-strong" x1="112" y1="192" x2="726" y2="192"/>
+
+  <!-- Time axis: 6AM to 10PM = 16 hours -->
+  <!-- y starts at 192, ends at 720 (528px for 16h = 33px per hour) -->
+  <!-- 6AM: y=192, 7AM: y=225, 8AM: y=258 ... 10PM: y=720 -->
+  
+  <!-- Hour lines and labels -->
+  <line class="divider" x1="112" y1="720" x2="726" y2="720"/>
+  
+  <!-- Time labels and grid lines -->
+  <text class="time-label" x="104" y="196">6AM</text>
+  <line class="hour-line" x1="112" y1="192" x2="726" y2="192"/>
+  
+  <text class="time-label" x="104" y="229">7AM</text>
+  <line class="hour-line" x1="112" y1="225" x2="726" y2="225"/>
+  
+  <text class="time-label" x="104" y="262">8AM</text>
+  <line class="hour-line" x1="112" y1="258" x2="726" y2="258"/>
+  
+  <text class="time-label" x="104" y="295">9AM</text>
+  <line class="hour-line" x1="112" y1="291" x2="726" y2="291"/>
+  
+  <text class="time-label" x="104" y="328">10AM</text>
+  <line class="hour-line" x1="112" y1="324" x2="726" y2="324"/>
+  
+  <text class="time-label" x="104" y="361">11AM</text>
+  <line class="hour-line" x1="112" y1="357" x2="726" y2="357"/>
+  
+  <text class="time-label" x="104" y="394">12PM</text>
+  <line class="hour-line" x1="112" y1="390" x2="726" y2="390"/>
+  
+  <text class="time-label" x="104" y="427">1PM</text>
+  <line class="hour-line" x1="112" y1="423" x2="726" y2="423"/>
+  
+  <text class="time-label" x="104" y="460">2PM</text>
+  <line class="hour-line" x1="112" y1="456" x2="726" y2="456"/>
+  
+  <text class="time-label" x="104" y="493">3PM</text>
+  <line class="hour-line" x1="112" y1="489" x2="726" y2="489"/>
+  
+  <text class="time-label" x="104" y="526">4PM</text>
+  <line class="hour-line" x1="112" y1="522" x2="726" y2="522"/>
+  
+  <text class="time-label" x="104" y="559">5PM</text>
+  <line class="hour-line" x1="112" y1="555" x2="726" y2="555"/>
+  
+  <text class="time-label" x="104" y="592">6PM</text>
+  <line class="hour-line" x1="112" y1="588" x2="726" y2="588"/>
+  
+  <text class="time-label" x="104" y="625">7PM</text>
+  <line class="hour-line" x1="112" y1="621" x2="726" y2="621"/>
+  
+  <text class="time-label" x="104" y="658">8PM</text>
+  <line class="hour-line" x1="112" y1="654" x2="726" y2="654"/>
+  
+  <text class="time-label" x="104" y="691">9PM</text>
+  <line class="hour-line" x1="112" y1="687" x2="726" y2="687"/>
+  
+  <text class="time-label" x="104" y="724">10PM</text>
+
+  <!-- Half-hour lines (subtle) -->
+  <line class="half-hour-line" x1="112" y1="208.5" x2="726" y2="208.5"/>
+  <line class="half-hour-line" x1="112" y1="241.5" x2="726" y2="241.5"/>
+  <line class="half-hour-line" x1="112" y1="274.5" x2="726" y2="274.5"/>
+  <line class="half-hour-line" x1="112" y1="307.5" x2="726" y2="307.5"/>
+  <line class="half-hour-line" x1="112" y1="340.5" x2="726" y2="340.5"/>
+  <line class="half-hour-line" x1="112" y1="373.5" x2="726" y2="373.5"/>
+  <line class="half-hour-line" x1="112" y1="406.5" x2="726" y2="406.5"/>
+  <line class="half-hour-line" x1="112" y1="439.5" x2="726" y2="439.5"/>
+  <line class="half-hour-line" x1="112" y1="472.5" x2="726" y2="472.5"/>
+  <line class="half-hour-line" x1="112" y1="505.5" x2="726" y2="505.5"/>
+  <line class="half-hour-line" x1="112" y1="538.5" x2="726" y2="538.5"/>
+  <line class="half-hour-line" x1="112" y1="571.5" x2="726" y2="571.5"/>
+  <line class="half-hour-line" x1="112" y1="604.5" x2="726" y2="604.5"/>
+  <line class="half-hour-line" x1="112" y1="637.5" x2="726" y2="637.5"/>
+  <line class="half-hour-line" x1="112" y1="670.5" x2="726" y2="670.5"/>
+  <line class="half-hour-line" x1="112" y1="703.5" x2="726" y2="703.5"/>
+
+  <!-- Day column dividers -->
+  <line class="day-divider" x1="190" y1="192" x2="190" y2="720"/>
+  <line class="day-divider" x1="278" y1="192" x2="278" y2="720"/>
+  <line class="day-divider" x1="366" y1="192" x2="366" y2="720"/>
+  <line class="day-divider" x1="454" y1="192" x2="454" y2="720"/>
+  <line class="day-divider" x1="542" y1="192" x2="542" y2="720"/>
+  <line class="day-divider" x1="630" y1="192" x2="630" y2="720"/>
+  <line class="day-divider" x1="718" y1="192" x2="718" y2="720"/>
+
+  <!-- Bottom Section: Priority + Bucket List + Notes -->
+  <line class="divider-strong" x1="112" y1="740" x2="726" y2="740"/>
+
+  <!-- Priority Section (left) -->
+  <text class="section-title" x="120" y="766">优先级</text>
+  <text class="section-title-en" x="120" y="778">PRIORITY</text>
+  
+  <circle class="priority-dot" cx="130" cy="798" r="3"/>
+  <text class="priority-text" x="142" y="802">重要且紧急</text>
+  
+  <circle class="priority-dot" cx="130" cy="822" r="3"/>
+  <text class="priority-text" x="142" y="826">重要不紧急</text>
+  
+  <circle class="priority-dot" cx="130" cy="846" r="3"/>
+  <text class="priority-text" x="142" y="850">紧急不重要</text>
+  
+  <circle class="priority-dot" cx="130" cy="870" r="3"/>
+  <text class="priority-text" x="142" y="874">不重要不紧急</text>
+
+  <!-- Priority lines for writing -->
+  <line class="note-line" x1="220" y1="798" x2="340" y2="798"/>
+  <line class="note-line" x1="220" y1="822" x2="340" y2="822"/>
+  <line class="note-line" x1="220" y1="846" x2="340" y2="846"/>
+  <line class="note-line" x1="220" y1="870" x2="340" y2="870"/>
+
+  <!-- Bucket List Section (middle) -->
+  <text class="section-title" x="360" y="766">愿望清单</text>
+  <text class="section-title-en" x="360" y="778">BUCKET LIST</text>
+  
+  <line class="note-line" x1="370" y1="798" x2="540" y2="798"/>
+  <circle class="deco-dot" cx="364" cy="798" r="1.5"/>
+  
+  <line class="note-line" x1="370" y1="822" x2="540" y2="822"/>
+  <circle class="deco-dot" cx="364" cy="822" r="1.5"/>
+  
+  <line class="note-line" x1="370" y1="846" x2="540" y2="846"/>
+  <circle class="deco-dot" cx="364" cy="846" r="1.5"/>
+  
+  <line class="note-line" x1="370" y1="870" x2="540" y2="870"/>
+  <circle class="deco-dot" cx="364" cy="870" r="1.5"/>
+
+  <!-- Notes Section (right) -->
+  <text class="section-title" x="560" y="766">备注</text>
+  <text class="section-title-en" x="560" y="778">NOTES</text>
+  
+  <line class="note-line" x1="570" y1="798" x2="718" y2="798"/>
+  <line class="note-line" x1="570" y1="822" x2="718" y2="822"/>
+  <line class="note-line" x1="570" y1="846" x2="718" y2="846"/>
+  <line class="note-line" x1="570" y1="870" x2="718" y2="870"/>
+  <line class="note-line" x1="570" y1="894" x2="718" y2="894"/>
+  <line class="note-line" x1="570" y1="918" x2="718" y2="918"/>
+
+  <!-- Bottom decorative line -->
+  <line class="divider" x1="300" y1="940" x2="500" y2="940"/>
+
+  <!-- Footer -->
+  <text class="footer-text" x="400" y="958" text-anchor="middle">PRINTABLE PLANNER · DESIGN WITH INTENTION</text>
+
+  <!-- Small decorative circles near bottom -->
+  <circle class="deco-dot" cx="380" cy="952" r="1"/>
+  <circle class="deco-dot" cx="400" cy="952" r="1"/>
+  <circle class="deco-dot" cx="420" cy="952" r="1"/>
+
+</svg>

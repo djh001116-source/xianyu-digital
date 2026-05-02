@@ -1,0 +1,196 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 0; }
+      .bg { fill: #FAFAFA; }
+      .border { fill: none; stroke: #E5E5E5; stroke-width: 1; }
+      .border-thin { fill: none; stroke: #E5E5E5; stroke-width: 0.5; }
+      .border-outer { fill: none; stroke: #2D2D2D; stroke-width: 1.5; }
+      .text-title { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 22px; font-weight: 600; fill: #2D2D2D; letter-spacing: 0.5px; }
+      .text-subtitle { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 13px; fill: #9CA3AF; letter-spacing: 2px; }
+      .text-date { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 12px; fill: #9CA3AF; text-anchor: end; }
+      .text-section-title { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 11px; font-weight: 600; fill: #2D2D2D; letter-spacing: 0.3px; text-transform: uppercase; }
+      .text-section-sub { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 10px; fill: #9CA3AF; }
+      .text-goal { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 11px; fill: #2D2D2D; }
+      .text-priority { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 11px; fill: #2D2D2D; }
+      .text-notes { font-family: 'PingFang SC', 'Hiragino Sans', 'Noto Sans SC', sans-serif; font-size: 10px; fill: #9CA3AF; }
+      .accent { fill: #5B7B9A; }
+      .accent-text { fill: #5B7B9A; }
+      .line-accent { stroke: #5B7B9A; stroke-width: 1.5; }
+      .checkbox { fill: none; stroke: #2D2D2D; stroke-width: 1.2; stroke-linecap: round; stroke-linejoin: round; }
+      .divider-h { stroke: #E5E5E5; stroke-width: 0.5; }
+      .divider-v { stroke: #E5E5E5; stroke-width: 0.5; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="0" ry="0"/>
+
+  <!-- Outer border -->
+  <rect class="border-outer" x="1" y="1" width="798" height="998" rx="0" ry="0"/>
+
+  <!-- Header section -->
+  <text class="text-title" x="35" y="52">MONTHLY PLANNER</text>
+  <text class="text-subtitle" x="35" y="72">三月 · MARCH 2025</text>
+
+  <!-- Accent line under header -->
+  <line class="line-accent" x1="35" y1="82" x2="120" y2="82"/>
+
+  <!-- Calendar grid - 7 columns x 5 rows (31 days) -->
+  <!-- Day labels -->
+  <text class="text-section-sub" x="92" y="108" text-anchor="middle">一</text>
+  <text class="text-section-sub" x="188" y="108" text-anchor="middle">二</text>
+  <text class="text-section-sub" x="284" y="108" text-anchor="middle">三</text>
+  <text class="text-section-sub" x="380" y="108" text-anchor="middle">四</text>
+  <text class="text-section-sub" x="476" y="108" text-anchor="middle">五</text>
+  <text class="text-section-sub" x="572" y="108" text-anchor="middle">六</text>
+  <text class="text-section-sub" x="668" y="108" text-anchor="middle">日</text>
+
+  <!-- Grid lines for calendar -->
+  <!-- Horizontal lines -->
+  <line class="divider-h" x1="35" y1="118" x2="765" y2="118"/>
+  <line class="divider-h" x1="35" y1="183" x2="765" y2="183"/>
+  <line class="divider-h" x1="35" y1="248" x2="765" y2="248"/>
+  <line class="divider-h" x1="35" y1="313" x2="765" y2="313"/>
+  <line class="divider-h" x1="35" y1="378" x2="765" y2="378"/>
+  <line class="divider-h" x1="35" y1="443" x2="765" y2="443"/>
+
+  <!-- Vertical lines -->
+  <line class="divider-v" x1="128" y1="118" x2="128" y2="443"/>
+  <line class="divider-v" x1="221" y1="118" x2="221" y2="443"/>
+  <line class="divider-v" x1="314" y1="118" x2="314" y2="443"/>
+  <line class="divider-v" x1="407" y1="118" x2="407" y2="443"/>
+  <line class="divider-v" x1="500" y1="118" x2="500" y2="443"/>
+  <line class="divider-v" x1="593" y1="118" x2="593" y2="443"/>
+  <line class="divider-v" x1="686" y1="118" x2="686" y2="443"/>
+
+  <!-- Left and right borders of calendar -->
+  <line class="divider-v" x1="35" y1="118" x2="35" y2="443"/>
+  <line class="divider-v" x1="765" y1="118" x2="765" y2="443"/>
+
+  <!-- Date numbers - March 2025 starts on Saturday -->
+  <!-- Row 1: days 1-2 (Sat-Sun) -->
+  <text class="text-date" x="680" y="138">1</text>
+  <text class="text-date" x="758" y="138">2</text>
+
+  <!-- Row 1: days 3-7 (Mon-Fri) -->
+  <text class="text-date" x="122" y="138">3</text>
+  <text class="text-date" x="215" y="138">4</text>
+  <text class="text-date" x="308" y="138">5</text>
+  <text class="text-date" x="401" y="138">6</text>
+  <text class="text-date" x="494" y="138">7</text>
+
+  <!-- Row 2: days 8-14 -->
+  <text class="text-date" x="122" y="203">8</text>
+  <text class="text-date" x="215" y="203">9</text>
+  <text class="text-date" x="308" y="203">10</text>
+  <text class="text-date" x="401" y="203">11</text>
+  <text class="text-date" x="494" y="203">12</text>
+  <text class="text-date" x="587" y="203">13</text>
+  <text class="text-date" x="680" y="203">14</text>
+
+  <!-- Row 3: days 15-21 -->
+  <text class="text-date" x="122" y="268">15</text>
+  <text class="text-date" x="215" y="268">16</text>
+  <text class="text-date" x="308" y="268">17</text>
+  <text class="text-date" x="401" y="268">18</text>
+  <text class="text-date" x="494" y="268">19</text>
+  <text class="text-date" x="587" y="268">20</text>
+  <text class="text-date" x="680" y="268">21</text>
+
+  <!-- Row 4: days 22-28 -->
+  <text class="text-date" x="122" y="333">22</text>
+  <text class="text-date" x="215" y="333">23</text>
+  <text class="text-date" x="308" y="333">24</text>
+  <text class="text-date" x="401" y="333">25</text>
+  <text class="text-date" x="494" y="333">26</text>
+  <text class="text-date" x="587" y="333">27</text>
+  <text class="text-date" x="680" y="333">28</text>
+
+  <!-- Row 5: days 29-31 -->
+  <text class="text-date" x="122" y="398">29</text>
+  <text class="text-date" x="215" y="398">30</text>
+  <text class="text-date" x="308" y="398">31</text>
+
+  <!-- Accent dot on 15th -->
+  <circle cx="116" cy="265" r="2.5" class="accent"/>
+
+  <!-- Divider line between calendar and bottom sections -->
+  <line class="divider-h" x1="35" y1="470" x2="765" y2="470"/>
+
+  <!-- LEFT SECTION: Month Goals -->
+  <text class="text-section-title" x="35" y="500">本月目标 · MONTH GOALS</text>
+  <line class="line-accent" x1="35" y1="508" x2="100" y2="508"/>
+
+  <!-- Goal 1 -->
+  <rect class="checkbox" x="35" y="525" width="12" height="12" rx="1"/>
+  <text class="text-goal" x="55" y="535">完成项目A第一阶段开发</text>
+
+  <!-- Goal 2 -->
+  <rect class="checkbox" x="35" y="550" width="12" height="12" rx="1"/>
+  <text class="text-goal" x="55" y="560">每周运动至少三次</text>
+
+  <!-- Goal 3 -->
+  <rect class="checkbox" x="35" y="575" width="12" height="12" rx="1"/>
+  <text class="text-goal" x="55" y="585">阅读两本设计相关书籍</text>
+
+  <!-- MIDDLE SECTION: Top 3 Priorities -->
+  <text class="text-section-title" x="35" y="625">本周优先 · TOP 3 PRIORITIES</text>
+  <line class="line-accent" x1="35" y1="633" x2="130" y2="633"/>
+
+  <!-- Priority 1 -->
+  <text class="text-priority" x="35" y="655">1. 准备季度汇报材料</text>
+
+  <!-- Priority 2 -->
+  <text class="text-priority" x="35" y="678">2. 完成客户提案初稿</text>
+
+  <!-- Priority 3 -->
+  <text class="text-priority" x="35" y="701">3. 整理团队项目文档</text>
+
+  <!-- RIGHT SECTION: Notes -->
+  <text class="text-section-title" x="400" y="500">笔记 · NOTES</text>
+  <line class="line-accent" x1="400" y1="508" x2="465" y2="508"/>
+
+  <!-- Notes area with subtle lines -->
+  <line class="divider-h" x1="400" y1="530" x2="765" y2="530" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="555" x2="765" y2="555" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="580" x2="765" y2="580" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="605" x2="765" y2="605" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="630" x2="765" y2="630" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="655" x2="765" y2="655" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="680" x2="765" y2="680" opacity="0.3"/>
+  <line class="divider-h" x1="400" y1="705" x2="765" y2="705" opacity="0.3"/>
+
+  <!-- Bottom divider -->
+  <line class="divider-h" x1="35" y1="730" x2="765" y2="730"/>
+
+  <!-- Bottom section: Weekly overview -->
+  <text class="text-section-title" x="35" y="760">本周概览 · WEEK AT A GLANCE</text>
+  <line class="line-accent" x1="35" y1="768" x2="130" y2="768"/>
+
+  <!-- Mini week blocks -->
+  <text class="text-section-sub" x="35" y="795">周一</text>
+  <line class="divider-h" x1="75" y1="798" x2="765" y2="798" opacity="0.3"/>
+
+  <text class="text-section-sub" x="35" y="820">周二</text>
+  <line class="divider-h" x1="75" y1="823" x2="765" y2="823" opacity="0.3"/>
+
+  <text class="text-section-sub" x="35" y="845">周三</text>
+  <line class="divider-h" x1="75" y1="848" x2="765" y2="848" opacity="0.3"/>
+
+  <text class="text-section-sub" x="35" y="870">周四</text>
+  <line class="divider-h" x1="75" y1="873" x2="765" y2="873" opacity="0.3"/>
+
+  <text class="text-section-sub" x="35" y="895">周五</text>
+  <line class="divider-h" x1="75" y1="898" x2="765" y2="898" opacity="0.3"/>
+
+  <!-- Footer -->
+  <line class="divider-h" x1="35" y1="920" x2="765" y2="920"/>
+
+  <text class="text-section-sub" x="35" y="945">闲鱼 · 北欧极简月历计划表</text>
+  <text class="text-section-sub" x="765" y="945" text-anchor="end">设计用于个人打印</text>
+
+  <!-- Small accent square in bottom right -->
+  <rect x="745" y="955" width="8" height="8" class="accent" opacity="0.4"/>
+</svg>

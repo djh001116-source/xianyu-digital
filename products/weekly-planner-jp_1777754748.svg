@@ -1,0 +1,193 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 1000" width="800" height="1000">
+  <defs>
+    <style>
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 0; }
+      .bg { fill: #FDF8F3; }
+      .border { fill: none; stroke: #D4C5B5; stroke-width: 2; }
+      .title-main { font-family: 'Georgia', 'Times New Roman', serif; font-size: 32px; font-weight: bold; fill: #5A4A3A; letter-spacing: 4px; }
+      .title-sub { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 13px; fill: #B5A08E; letter-spacing: 2px; }
+      .section-title { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 13px; font-weight: bold; fill: #7A6B5D; letter-spacing: 1px; }
+      .day-label { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 11px; fill: #8A7B6D; text-anchor: middle; }
+      .time-label { font-family: 'Helvetica Neue', Arial, sans-serif; font-size: 9px; fill: #B5A89A; text-anchor: end; }
+      .grid-line-h { stroke: #E8DFD5; stroke-width: 0.5; }
+      .grid-line-v { stroke: #E8DFD5; stroke-width: 0.5; }
+      .header-line { stroke: #D4C5B5; stroke-width: 1; }
+      .section-line { stroke: #D4C5B5; stroke-width: 0.8; }
+      .dot { fill: #D4C5B5; }
+      .priority-item { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 10px; fill: #7A6B5D; }
+      .priority-check { fill: none; stroke: #C8B8A8; stroke-width: 1.5; }
+      .notes-line { stroke: #E0D5C8; stroke-width: 0.5; }
+      .deco-circle { fill: none; stroke: #E8DFD5; stroke-width: 0.8; }
+      .deco-dot { fill: #E0D5C8; }
+      .footer-text { font-family: 'PingFang SC', 'Microsoft YaHei', 'Hiragino Sans', sans-serif; font-size: 8px; fill: #C8B8A8; letter-spacing: 1px; }
+    </style>
+  </defs>
+
+  <!-- Background -->
+  <rect class="bg" width="800" height="1000" rx="4" ry="4"/>
+
+  <!-- Border -->
+  <rect class="border" x="18" y="18" width="764" height="964" rx="4" ry="4"/>
+
+  <!-- Decorative corner elements -->
+  <circle class="deco-circle" cx="38" cy="38" r="6"/>
+  <circle class="deco-dot" cx="38" cy="38" r="2"/>
+  <circle class="deco-circle" cx="762" cy="38" r="6"/>
+  <circle class="deco-dot" cx="762" cy="38" r="2"/>
+  <circle class="deco-circle" cx="38" cy="962" r="6"/>
+  <circle class="deco-dot" cx="38" cy="962" r="2"/>
+  <circle class="deco-circle" cx="762" cy="962" r="6"/>
+  <circle class="deco-dot" cx="762" cy="962" r="2"/>
+
+  <!-- Title Section -->
+  <text class="title-main" x="400" y="68" text-anchor="middle">WEEKLY PLANNER</text>
+  <text class="title-sub" x="400" y="90" text-anchor="middle">— 每周计划表 —</text>
+  <line class="header-line" x1="180" y1="100" x2="620" y2="100"/>
+
+  <!-- Decorative line under title -->
+  <line x1="360" y1="104" x2="440" y2="104" stroke="#D4C5B5" stroke-width="0.5"/>
+
+  <!-- ===== TIME GRID SECTION ===== -->
+  <text class="section-title" x="40" y="135">TIME SCHEDULE · 时间轴</text>
+  <line class="section-line" x1="40" y1="140" x2="160" y2="140"/>
+
+  <!-- Day labels -->
+  <text class="day-label" x="140" y="160">周一</text>
+  <text class="day-label" x="226" y="160">周二</text>
+  <text class="day-label" x="312" y="160">周三</text>
+  <text class="day-label" x="398" y="160">周四</text>
+  <text class="day-label" x="484" y="160">周五</text>
+  <text class="day-label" x="570" y="160">周六</text>
+  <text class="day-label" x="656" y="160">周日</text>
+  <text class="day-label" x="742" y="160">MON</text>
+
+  <!-- Day column vertical lines -->
+  <line class="grid-line-v" x1="170" y1="155" x2="170" y2="610"/>
+  <line class="grid-line-v" x1="256" y1="155" x2="256" y2="610"/>
+  <line class="grid-line-v" x1="342" y1="155" x2="342" y2="610"/>
+  <line class="grid-line-v" x1="428" y1="155" x2="428" y2="610"/>
+  <line class="grid-line-v" x1="514" y1="155" x2="514" y2="610"/>
+  <line class="grid-line-v" x1="600" y1="155" x2="600" y2="610"/>
+  <line class="grid-line-v" x1="686" y1="155" x2="686" y2="610"/>
+  <line class="grid-line-v" x1="760" y1="155" x2="760" y2="610"/>
+
+  <!-- Time labels and horizontal grid lines -->
+  <!-- 6AM -->
+  <text class="time-label" x="130" y="178">6AM</text>
+  <line class="grid-line-h" x1="135" y1="175" x2="760" y2="175"/>
+  <!-- 7AM -->
+  <text class="time-label" x="130" y="208">7AM</text>
+  <line class="grid-line-h" x1="135" y1="205" x2="760" y2="205"/>
+  <!-- 8AM -->
+  <text class="time-label" x="130" y="238">8AM</text>
+  <line class="grid-line-h" x1="135" y1="235" x2="760" y2="235"/>
+  <!-- 9AM -->
+  <text class="time-label" x="130" y="268">9AM</text>
+  <line class="grid-line-h" x1="135" y1="265" x2="760" y2="265"/>
+  <!-- 10AM -->
+  <text class="time-label" x="130" y="298">10AM</text>
+  <line class="grid-line-h" x1="135" y1="295" x2="760" y2="295"/>
+  <!-- 11AM -->
+  <text class="time-label" x="130" y="328">11AM</text>
+  <line class="grid-line-h" x1="135" y1="325" x2="760" y2="325"/>
+  <!-- 12PM -->
+  <text class="time-label" x="130" y="358">12PM</text>
+  <line class="grid-line-h" x1="135" y1="355" x2="760" y2="355"/>
+  <!-- 1PM -->
+  <text class="time-label" x="130" y="388">1PM</text>
+  <line class="grid-line-h" x1="135" y1="385" x2="760" y2="385"/>
+  <!-- 2PM -->
+  <text class="time-label" x="130" y="418">2PM</text>
+  <line class="grid-line-h" x1="135" y1="415" x2="760" y2="415"/>
+  <!-- 3PM -->
+  <text class="time-label" x="130" y="448">3PM</text>
+  <line class="grid-line-h" x1="135" y1="445" x2="760" y2="445"/>
+  <!-- 4PM -->
+  <text class="time-label" x="130" y="478">4PM</text>
+  <line class="grid-line-h" x1="135" y1="475" x2="760" y2="475"/>
+  <!-- 5PM -->
+  <text class="time-label" x="130" y="508">5PM</text>
+  <line class="grid-line-h" x1="135" y1="505" x2="760" y2="505"/>
+  <!-- 6PM -->
+  <text class="time-label" x="130" y="538">6PM</text>
+  <line class="grid-line-h" x1="135" y1="535" x2="760" y2="535"/>
+  <!-- 7PM -->
+  <text class="time-label" x="130" y="568">7PM</text>
+  <line class="grid-line-h" x1="135" y1="565" x2="760" y2="565"/>
+  <!-- 8PM -->
+  <text class="time-label" x="130" y="598">8PM</text>
+  <line class="grid-line-h" x1="135" y1="595" x2="760" y2="595"/>
+  <!-- 9PM -->
+  <text class="time-label" x="130" y="628">9PM</text>
+  <line class="grid-line-h" x1="135" y1="625" x2="760" y2="625"/>
+  <!-- 10PM -->
+  <text class="time-label" x="130" y="640">10PM</text>
+
+  <!-- Bottom line of time grid -->
+  <line class="grid-line-h" x1="135" y1="610" x2="760" y2="610"/>
+
+  <!-- ===== PRIORITY SECTION ===== -->
+  <text class="section-title" x="40" y="665">PRIORITY · 优先事项</text>
+  <line class="section-line" x1="40" y1="670" x2="175" y2="670"/>
+
+  <!-- Priority checkboxes and items -->
+  <rect class="priority-check" x="50" y="685" width="12" height="12" rx="2"/>
+  <text class="priority-item" x="70" y="695">重要紧急 · 今日必须完成</text>
+
+  <rect class="priority-check" x="50" y="710" width="12" height="12" rx="2"/>
+  <text class="priority-item" x="70" y="720">重要不紧急 · 本周核心目标</text>
+
+  <rect class="priority-check" x="50" y="735" width="12" height="12" rx="2"/>
+  <text class="priority-item" x="70" y="745">紧急不重要 · 可委托他人</text>
+
+  <rect class="priority-check" x="50" y="760" width="12" height="12" rx="2"/>
+  <text class="priority-item" x="70" y="770">不重要不紧急 · 有空再做</text>
+
+  <!-- ===== BUCKET LIST SECTION ===== -->
+  <text class="section-title" x="310" y="665">BUCKET LIST · 心愿清单</text>
+  <line class="section-line" x1="310" y1="670" x2="455" y2="670"/>
+
+  <text class="priority-item" x="320" y="695">☐ 去一家新餐厅尝试美食</text>
+  <text class="priority-item" x="320" y="720">☐ 读一本想读很久的书</text>
+  <text class="priority-item" x="320" y="745">☐ 看一部高分电影或纪录片</text>
+  <text class="priority-item" x="320" y="770">☐ 给自己买一束鲜花</text>
+
+  <!-- ===== NOTES SECTION ===== -->
+  <text class="section-title" x="580" y="665">NOTES · 备忘录</text>
+  <line class="section-line" x1="580" y1="670" x2="700" y2="670"/>
+
+  <!-- Notes lines -->
+  <line class="notes-line" x1="580" y1="695" x2="760" y2="695"/>
+  <line class="notes-line" x1="580" y1="720" x2="760" y2="720"/>
+  <line class="notes-line" x1="580" y1="745" x2="760" y2="745"/>
+  <line class="notes-line" x1="580" y1="770" x2="760" y2="770"/>
+
+  <!-- ===== BOTTOM DECORATIVE SECTION ===== -->
+  <line class="header-line" x1="250" y1="800" x2="550" y2="800"/>
+
+  <!-- Decorative dots -->
+  <circle cx="400" cy="810" r="3" fill="#E0D5C8"/>
+  <circle cx="390" cy="810" r="1.5" fill="#E8DFD5"/>
+  <circle cx="410" cy="810" r="1.5" fill="#E8DFD5"/>
+
+  <!-- Weekly review section -->
+  <text class="section-title" x="40" y="840">WEEKLY REVIEW · 每周回顾</text>
+  <line class="section-line" x1="40" y1="845" x2="180" y2="845"/>
+
+  <text class="priority-item" x="50" y="870">本周最开心的三件事：</text>
+  <line class="notes-line" x1="50" y1="885" x2="350" y2="885"/>
+  <line class="notes-line" x1="50" y1="905" x2="350" y2="905"/>
+  <line class="notes-line" x1="50" y1="925" x2="350" y2="925"/>
+
+  <text class="priority-item" x="420" y="870">下周可以做得更好的事：</text>
+  <line class="notes-line" x1="420" y1="885" x2="760" y2="885"/>
+  <line class="notes-line" x1="420" y1="905" x2="760" y2="905"/>
+  <line class="notes-line" x1="420" y1="925" x2="760" y2="925"/>
+
+  <!-- Footer -->
+  <text class="footer-text" x="400" y="960" text-anchor="middle">—  Less is more  —</text>
+
+  <!-- Small decorative line -->
+  <line x1="380" y1="968" x2="420" y2="968" stroke="#E0D5C8" stroke-width="0.5"/>
+</svg>

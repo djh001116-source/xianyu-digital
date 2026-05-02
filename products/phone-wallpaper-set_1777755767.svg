@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1920" width="1080" height="1920">
+  <defs>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@300;400;500;700&display=swap');
+      
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+      
+      .bg { fill: #F8F4F0; }
+      .surface { fill: #F0EAE4; }
+      .foreground { fill: #3C3633; }
+      .muted { fill: #B5ADA4; }
+      .border { stroke: #E0D8D0; }
+      .accent { fill: #9B7B7B; }
+      
+      .frame {
+        fill: none;
+        stroke: #E0D8D0;
+        stroke-width: 1.5;
+      }
+      
+      .geo-circle {
+        opacity: 0.15;
+      }
+      
+      .geo-blur {
+        filter: url(#blur-lg);
+      }
+      
+      .geo-blur-sm {
+        filter: url(#blur-sm);
+      }
+    </style>
+    
+    <filter id="blur-lg">
+      <feGaussianBlur stdDeviation="40" />
+    </filter>
+    
+    <filter id="blur-sm">
+      <feGaussianBlur stdDeviation="18" />
+    </filter>
+    
+    <filter id="blur-md">
+      <feGaussianBlur stdDeviation="28" />
+    </filter>
+    
+    <filter id="blur-xl">
+      <feGaussianBlur stdDeviation="60" />
+    </filter>
+    
+    <linearGradient id="grad-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#9B7B7B" stop-opacity="0.6" />
+      <stop offset="100%" stop-color="#9B7B7B" stop-opacity="0.15" />
+    </linearGradient>
+    
+    <linearGradient id="grad-accent-light" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#B59595" stop-opacity="0.3" />
+      <stop offset="100%" stop-color="#9B7B7B" stop-opacity="0.08" />
+    </linearGradient>
+    
+    <linearGradient id="grad-warm" x1="0%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#C4A98B" stop-opacity="0.12" />
+      <stop offset="100%" stop-color="#9B7B7B" stop-opacity="0.05" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect class="bg" width="1080" height="1920" />
+  
+  <!-- Frame border -->
+  <rect class="frame" x="12" y="12" width="1056" height="1896" rx="4" />
+  
+  <!-- Large abstract circle - top right area -->
+  <circle cx="820" cy="420" r="380" fill="#9B7B7B" opacity="0.08" class="geo-blur" />
+  
+  <!-- Large soft rectangle - bottom left -->
+  <rect x="-120" y="1280" width="640" height="720" rx="200" fill="#9B7B7B" opacity="0.06" class="geo-blur-xl" transform="rotate(-8, 200, 1640)" />
+  
+  <!-- Mid-size circle - center left -->
+  <circle cx="260" cy="860" r="180" fill="url(#grad-accent-light)" class="geo-blur" />
+  
+  <!-- Small accent circle - upper left -->
+  <circle cx="180" cy="340" r="90" fill="#9B7B7B" opacity="0.12" class="geo-blur-sm" />
+  
+  <!-- Soft rounded rectangle - mid right -->
+  <rect x="680" y="900" width="320" height="480" rx="160" fill="url(#grad-accent)" class="geo-blur-md" transform="rotate(12, 840, 1140)" />
+  
+  <!-- Tiny precise circle - accent point -->
+  <circle cx="420" cy="600" r="24" fill="#9B7B7B" opacity="0.2" />
+  
+  <!-- Subtle warm overlay - bottom -->
+  <rect x="0" y="1400" width="1080" height="520" fill="url(#grad-warm)" class="geo-blur" />
+  
+  <!-- Small square - top right -->
+  <rect x="880" y="160" width="80" height="80" rx="8" fill="#9B7B7B" opacity="0.1" transform="rotate(15, 920, 200)" />
+  
+  <!-- Large sweeping arc - bottom right -->
+  <path d="M 600 1920 Q 800 1500 1100 1400" stroke="#9B7B7B" stroke-width="120" fill="none" opacity="0.04" stroke-linecap="round" class="geo-blur-xl" />
+  
+  <!-- Soft ellipse - top center -->
+  <ellipse cx="540" cy="180" rx="300" ry="80" fill="#9B7B7B" opacity="0.04" class="geo-blur" />
+  
+  <!-- Accent dot cluster -->
+  <circle cx="680" cy="720" r="8" fill="#9B7B7B" opacity="0.15" />
+  <circle cx="700" cy="740" r="6" fill="#9B7B7B" opacity="0.1" />
+  <circle cx="665" cy="735" r="5" fill="#9B7B7B" opacity="0.08" />
+  
+  <!-- Large blurred rectangle - vertical left -->
+  <rect x="-80" y="400" width="300" height="800" rx="150" fill="#9B7B7B" opacity="0.04" class="geo-blur-xl" transform="rotate(-5, 70, 800)" />
+  
+  <!-- Subtle highlight circle -->
+  <circle cx="540" cy="1100" r="200" fill="#F0EAE4" opacity="0.15" class="geo-blur" />
+  
+  <!-- Minimal horizontal line - only structural element -->
+  <line x1="240" y1="1520" x2="840" y2="1520" stroke="#E0D8D0" stroke-width="0.5" opacity="0.4" />
+  
+  <!-- Second tiny accent -->
+  <circle cx="320" cy="1380" r="12" fill="#9B7B7B" opacity="0.08" />
+</svg>
