@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>文章 · 开放设计数字工坊</title>
+<style>
+  :root {
+    --bg: #0f0f11;
+    --text: #e8e6e3;
+    --muted: #88848a;
+    --accent: #c4a265;
+    --card: #1a1a1e;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.8;
+    padding: 2rem 1.5rem;
+  }
+  .container { max-width: 720px; margin: 0 auto; }
+  .back { color: var(--muted); text-decoration: none; font-size: 0.9rem; margin-bottom: 2rem; display: inline-block; }
+  .back:hover { color: var(--accent); }
+  h1 { font-size: 1.8rem; font-weight: 400; margin-bottom: 1rem; }
+  .meta { color: var(--muted); font-size: 0.85rem; margin-bottom: 2rem; border-bottom: 1px solid #2a2a2e; padding-bottom: 1rem; }
+  h2 { font-size: 1.3rem; margin: 2rem 0 0.8rem; color: var(--accent); font-weight: 400; }
+  p { margin-bottom: 1rem; }
+  blockquote {
+    border-left: 3px solid var(--accent);
+    padding-left: 1rem;
+    color: var(--muted);
+    margin: 1.5rem 0;
+    font-style: italic;
+  }
+  code {
+    background: #1a1a1e;
+    padding: 2px 6px;
+    border-radius: 3px;
+    font-size: 0.9em;
+  }
+  pre {
+    background: #1a1a1e;
+    padding: 1rem;
+    border-radius: 8px;
+    overflow-x: auto;
+    font-size: 0.85rem;
+    margin: 1rem 0;
+    border: 1px solid #2a2a2e;
+  }
+  table { width: 100%; border-collapse: collapse; margin: 1rem 0; }
+  th, td { border: 1px solid #2a2a2e; padding: 0.5rem 0.8rem; text-align: left; font-size: 0.9rem; }
+  th { background: #1a1a1e; color: var(--muted); font-weight: 400; }
+  .cta {
+    display: inline-block;
+    background: var(--accent);
+    color: var(--bg);
+    text-decoration: none;
+    padding: 0.6rem 1.5rem;
+    border-radius: 6px;
+    font-size: 0.9rem;
+    margin-top: 1rem;
+  }
+  .cta:hover { opacity: 0.9; }
+</style>
+</head>
+<body>
+<div class="container">
+  <a class="back" href="/xianyu-digital/">← 返回商品页</a>
+  <h1>我用AI+专业设计规则做出了不AI的planner模板</h1>
+  <div class="meta">2026年5月 · 邓佳濠 · #设计 #AI #独立开发</div>
+
+  <blockquote>一个独立开发者在闲鱼卖数字商品的血泪教训：AI直接生成的设计，一出来就被人说"一眼AI"。</blockquote>
+
+  <h2>当AI开始做设计</h2>
+  <p>2026年春天，我决定在闲鱼上卖数字商品。</p>
+  <p>计划很简单：用AI生成planner模板、涂色本、手机壁纸，上传自动化流水线，躺着赚钱。技术栈我都准备好了——Python + Pillow 批量生成，Playwright 自动上架。</p>
+  <p>第一天生成出来的设计，我自己都沉默了。</p>
+  <p>字体怪怪的——中文用的是 SimHei，英文是 Arial，两个放在一起像是不同次元的产物。颜色刺眼——纯红 #FF0000、纯蓝 #0000FF、明黄 #FFFF00，像初中生做PPT。排版杂乱——文字挤在一起，没有对齐，没有呼吸感，整体看起来像 2005 年的网页模板。</p>
+  <p>我硬着头皮上传了一个测试品。24小时后，0浏览，0收藏。</p>
+  <p>问题不是"AI不会做设计"——问题是我让AI<strong>自由发挥</strong>了。就像让一个刚学画画的小孩画蒙娜丽莎，他会把所有颜料都泼上去。</p>
+  <p>我需要一套规则。不是限制创造力的规则，而是<strong>让好设计自然而然地发生</strong>的规则。</p>
+
+  <h2>研究专业设计系统</h2>
+  <p>我花了一周时间，研究了三个方向：色彩、字体、布局。</p>
+
+  <h3>色彩：从HSL升级到OKLch</h3>
+  <p>大多数人在AI prompt里写的颜色是"蓝色"或者"#3498db"。这就像跟建筑师说"盖个房子"。</p>
+  <p>专业设计师用的是<strong>色彩系统</strong>。我深入研究了 <strong>OKLch 色彩空间</strong>——一种比 HSL 更符合人眼感知的颜色模型。</p>
+  <p>在 OKLch 中：</p>
+  <ul style="margin-left:1.5rem;margin-bottom:1rem;">
+    <li><strong>L（亮度）</strong>：0-1，控制颜色有多亮/暗</li>
+    <li><strong>C（彩度）</strong>：0-0.4，控制颜色有多鲜艳/柔和</li>
+    <li><strong>h（色相）</strong>：0-360，色轮位置</li>
+  </ul>
+  <p>关键发现：大多数"AI感"配色的问题是彩度太高（C > 0.15）。专业设计的秘密是把彩度降下来，用低饱和度颜色创造高级感。</p>
+
+  <h3>字体：三套就够了</h3>
+  <p>AI最爱用的字体组合是 Arial + SimHei——因为它们最普遍、最容易获取。但也最廉价。</p>
+  <table>
+    <tr><th>用途</th><th>字体</th><th>场景</th></tr>
+    <tr><td>英文正文</td><td><strong>Inter</strong></td><td>干净的无衬线，数字排版利器</td></tr>
+    <tr><td>中文正文</td><td><strong>Noto Sans SC</strong></td><td>Google出品，中文优雅度第一梯队</td></tr>
+    <tr><td>装饰标题</td><td><strong>Playfair Display</strong></td><td>衬线体，增加精致感</td></tr>
+  </table>
+
+  <h3>布局：黄金分割不是玄学</h3>
+  <p>我引入了一个 8px 栅格系统 + 黄金比例（1:1.618）作为空间分割的参考。</p>
+  <p>比如 800x1000 的画布：标题区在黄金分割线位置（495px 处），内容按 2:3:5 比例分布，边距固定为 40px（5个网格单元）。</p>
+  <p>这样一来，元素之间的关系有了数学基础，不再是"我觉得放这里好看"。</p>
+
+  <h2>anti-ai-slop 设计系统</h2>
+  <p>我把这些规则写成了 Python 代码，包装成一个设计系统（我开玩笑叫它 <strong>anti-ai-slop</strong>——反AI感设计系统）。</p>
+  <pre>设计规则层（OKLch调色板 + 字体规则 + 黄金网格）
+    ↓
+品类模板层（Planner、Coloring、Wallpaper 等品类参数）
+    ↓
+渲染引擎（Python + Pillow 生成最终设计稿）</pre>
+
+  <h2>所以说</h2>
+  <p>AI 不是不会做设计。AI 是太容易满足——你给它一个粗糙的 prompt，它给你一个粗糙的结果。</p>
+  <p><strong>设计系统的价值，不是替代AI的创造力，而是给创造力一个框架。</strong></p>
+  <p>就像建筑师不会让每一面墙都自由生长——你先把地基、结构、管线画好，然后在这个框架里，每一层可以完全不同。</p>
+
+  <p style="margin-top:2rem;">如果这篇文章对你有用，欢迎看看我在闲鱼上卖的设计模板：</p>
+  <a class="cta" href="/xianyu-digital/">查看数字工坊 →</a>
+</div>
+</body>
+</html>

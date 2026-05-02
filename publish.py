@@ -108,13 +108,20 @@ def create_listing(page, product, image_paths, dry_run=False):
     log.info(f"Creating listing: {product['name']} (¥{product['price']})")
     
     # ── 1. Upload images ──
-    # Use the file input inside ant-upload (hidden by CSS, force set)
     if image_paths:
-        file_input = page.locator('.ant-upload-wrapper input[type="file"]').first
-        # file input is often hidden via opacity/position, use force
-        file_input.set_input_files(image_paths[:9])  # Max 9 images
-        page.wait_for_timeout(3000)
-        log.info(f"Images uploaded: {[Path(p).name for p in image_paths[:3]]}")
+        # Headless-safe: find ALL file inputs (antd may wrap differently headless vs headed)
+        page.wait_for_timeout(2000)
+        file_inputs = page.locator('input[type="file"]')
+        count = file_inputs.count()
+        log.info(f"Found {count} file input(s) on page")
+        if count > 0:
+            # Try the most visible one first, fallback to any
+            file_inputs.first.set_input_files(image_paths[:9], timeout=15000)
+            page.wait_for_timeout(3000)
+            log.info(f"Images uploaded: {[Path(p).name for p in image_paths[:3]]}")
+        else:
+            log.error("No file input found on page")
+            return False
     
     # ── 2. Title + Description (editor) ──
     description = product.get("description", "")
