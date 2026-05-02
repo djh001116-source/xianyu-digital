@@ -75,11 +75,11 @@ def get_or_login(browser):
     page = context.new_page()
     
     # Try with cookies
-    page.goto("https://www.goofish.com/", wait_until="networkidle", timeout=30000)
+    page.goto("https://www.goofish.com/", wait_until="load", timeout=45000)
     page.wait_for_timeout(3000)
     
     if load_cookies(page):
-        page.goto(PUBLISH_URL, wait_until="networkidle", timeout=30000)
+        page.goto(PUBLISH_URL, wait_until="load", timeout=45000)
         page.wait_for_timeout(3000)
         
         # Check if we're still logged in
@@ -90,11 +90,11 @@ def get_or_login(browser):
             return page, context
         
     # Interactive login
-    page.goto("https://www.goofish.com/", wait_until="networkidle", timeout=30000)
+    page.goto("https://www.goofish.com/", wait_until="load", timeout=45000)
     log.info("Please scan QR code to login in the browser window...")
     page.wait_for_url(lambda url: "login" not in url and "passport" not in url, timeout=120000)
     save_cookies(page)
-    page.goto(PUBLISH_URL, wait_until="networkidle", timeout=30000)
+    page.goto(PUBLISH_URL, wait_until="load", timeout=45000)
     page.wait_for_timeout(3000)
     return page, context
 
@@ -235,7 +235,7 @@ def main():
                 
                 # Navigate to publish page fresh
                 if i > 0:
-                    page.goto(PUBLISH_URL, wait_until="networkidle", timeout=30000)
+                    page.goto(PUBLISH_URL, wait_until="load", timeout=45000)
                     page.wait_for_timeout(3000)
                 
                 success = create_listing(page, product, img_paths, dry_run=args.dry_run)
