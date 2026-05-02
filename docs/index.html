@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>开放设计 · 数字工坊</title>
+<style>
+  :root {
+    --bg: #0f0f11;
+    --card: #1a1a1e;
+    --accent: #c4a265;
+    --text: #e8e6e3;
+    --muted: #88848a;
+    --radius: 12px;
+  }
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+  body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans SC', sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.6;
+    min-height: 100vh;
+  }
+  .container { max-width: 1200px; margin: 0 auto; padding: 2rem 1.5rem; }
+
+  /* Header */
+  header {
+    text-align: center;
+    padding: 4rem 0 2rem;
+    border-bottom: 1px solid #2a2a2e;
+    margin-bottom: 3rem;
+  }
+  header h1 {
+    font-size: 2rem;
+    font-weight: 300;
+    letter-spacing: 4px;
+    color: var(--accent);
+    margin-bottom: 0.5rem;
+  }
+  header p {
+    color: var(--muted);
+    font-size: 0.95rem;
+    max-width: 500px;
+    margin: 0 auto;
+  }
+
+  /* Grid */
+  .grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 1.5rem;
+  }
+  .card {
+    background: var(--card);
+    border-radius: var(--radius);
+    overflow: hidden;
+    border: 1px solid #2a2a2e;
+    transition: border-color 0.2s, transform 0.2s;
+  }
+  .card:hover {
+    border-color: var(--accent);
+    transform: translateY(-2px);
+  }
+  .card-image {
+    width: 100%;
+    aspect-ratio: 4/3;
+    object-fit: cover;
+    display: block;
+    background: #222;
+  }
+  .card-body {
+    padding: 1rem 1.25rem 1.25rem;
+  }
+  .card-title {
+    font-size: 1rem;
+    font-weight: 500;
+    margin-bottom: 0.3rem;
+  }
+  .card-title .cn { color: var(--text); }
+  .card-title .en {
+    color: var(--muted);
+    font-size: 0.8rem;
+    font-weight: 300;
+    display: block;
+    margin-top: 2px;
+  }
+  .card-price {
+    color: var(--accent);
+    font-size: 1.1rem;
+    font-weight: 500;
+    margin: 0.5rem 0 0.75rem;
+  }
+  .card-btn {
+    display: inline-block;
+    background: transparent;
+    color: var(--accent);
+    border: 1px solid var(--accent);
+    border-radius: 6px;
+    padding: 0.4rem 1rem;
+    font-size: 0.85rem;
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.2s;
+  }
+  .card-btn:hover {
+    background: var(--accent);
+    color: var(--bg);
+  }
+
+  /* Footer */
+  footer {
+    text-align: center;
+    padding: 3rem 0;
+    color: var(--muted);
+    font-size: 0.8rem;
+    border-top: 1px solid #2a2a2e;
+    margin-top: 3rem;
+  }
+
+  @media (max-width: 600px) {
+    header h1 { font-size: 1.5rem; }
+    .grid { grid-template-columns: 1fr; }
+  }
+</style>
+</head>
+<body>
+<div class="container">
+  <header>
+    <h1>开放设计 · 数字工坊</h1>
+    <p>AI 辅助生成 · 设计师品味 · 即买即用 · 数字下载</p>
+  </header>
+
+  <div class="grid" id="product-grid">
+    <!-- populated by JS -->
+  </div>
+
+  <footer>
+    <p>© 2026 开放设计 · 所有商品均为数字产品，购买后通过闲鱼发送下载链接</p>
+  </footer>
+</div>
+
+<script>
+const products = [
+  { name: '每日规划 · 极简', cat: 'daily-planner-minimal', img: 'daily-planner-minimal_1777755621.png', price: '¥9.99', desc: '日计划极简模板，A4 打印可用' },
+  { name: '感恩日记', cat: 'gratitude-journal', img: 'gratitude-journal_1777755938.png', price: '¥9.99', desc: '每日感恩练习，正念生活记录' },
+  { name: '习惯追踪 · 月度', cat: 'habit-tracker_v2', img: 'habit-tracker_v2.png', price: '¥9.99', desc: '月度习惯打卡表，追踪进度一目了然' },
+  { name: '发票模板', cat: 'invoice-template', img: 'invoice-template_1777756056.png', price: '¥9.99', desc: '专业数字发票模板，自由职业者必备' },
+  { name: '饮食规划', cat: 'meal-planner', img: 'meal-planner_1777755971.png', price: '¥9.99', desc: '周饮食规划模板，营养搭配助手' },
+  { name: '月计划概览', cat: 'monthly-planner', img: 'monthly-planner_1777755793.png', price: '¥9.99', desc: '月度全局规划，大事一览' },
+  { name: '手机壁纸套装', cat: 'phone-wallpaper-set', img: 'phone-wallpaper-set_1777755767.png', price: '¥9.99', desc: '极简风格手机壁纸，多尺寸适配' },
+  { name: '学习规划', cat: 'study-planner', img: 'study-planner_1777756016.png', price: '¥9.99', desc: '学习计划与进度追踪，高效备考' },
+  { name: '周计划 · 和风', cat: 'weekly-planner-jp', img: 'weekly-planner-jp_1777755562.png', price: '¥9.99', desc: '和风设计周计划，打印或数字使用' },
+  { name: '禅绕画着色页', cat: 'zentangle-coloring', img: 'zentangle-coloring_1777755697.png', price: '¥9.99', desc: '禅绕画风格着色页，减压专注利器' },
+];
+
+const grid = document.getElementById('product-grid');
+products.forEach(p => {
+  const card = document.createElement('div');
+  card.className = 'card';
+  card.innerHTML = `
+    <img class="card-image" src="../products/${p.img}" alt="${p.name}" loading="lazy" onerror="this.style.display='none'">
+    <div class="card-body">
+      <div class="card-title">
+        <span class="cn">${p.name}</span>
+        <span class="en">${p.desc}</span>
+      </div>
+      <div class="card-price">${p.price}</div>
+      <a class="card-btn" href="https://www.goofish.com/search?searchWord=${encodeURIComponent(p.name + ' 数字设计')}" target="_blank" rel="noopener">闲鱼购买</a>
+    </div>
+  `;
+  grid.appendChild(card);
+});
+</script>
+</body>
+</html>
